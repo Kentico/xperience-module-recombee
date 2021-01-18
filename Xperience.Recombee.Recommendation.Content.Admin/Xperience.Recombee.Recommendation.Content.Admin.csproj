@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\CMS\CMSModules\Xperience.Recombee.Recommendation.Content.Admin\Recombee_setup.aspx.cs" Link="Pages\Recombee_setup.aspx.cs" />
+    <Compile Include="..\CMS\CMSModules\Xperience.Recombee.Recommendation.Content.Admin\Recombee_setup.aspx.designer.cs" Link="Pages\Recombee_setup.aspx.designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Recombee.ApiClient" Version="2.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="CMS.Base">
+      <HintPath>..\Lib\CMS.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.Base.Web.UI">
+      <HintPath>..\CMS\bin\CMS.Base.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.Core">
+      <HintPath>..\Lib\CMS.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.DataEngine">
+      <HintPath>..\Lib\CMS.DataEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.DocumentEngine">
+      <HintPath>..\Lib\CMS.DocumentEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.Membership">
+      <HintPath>..\CMS\bin\CMS.Membership.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.UIControls">
+      <HintPath>..\Lib\CMS.UIControls.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Pages\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\CMS\CMSModules\Xperience.Recombee.Recommendation.Content.Admin\Recombee_setup.aspx" Link="Pages\Recombee_setup.aspx" />
+  </ItemGroup>
+
+</Project>
