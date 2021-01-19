@@ -72,7 +72,7 @@ configurations.Mappings.Add("cms.document.DancingGoatCore.Article", new List<Fie
 > This can be also done in custom module. See example in [Xperience.Recombee.Recommendation.Content.Admin.SampleConfiguration](Xperience.Recombee.Recommendation.Content.Admin.SampleConfiguration) folder.
 ### Recombee database initialization
 1. Once previous steps are done open administration iterface and navigate to _Recombee content recommendation_ application.
-![Module user interface](images/AdministrationInterface.png)
+![Module user interface](Images/AdministrationInterface.png)
 1. Hit initialize database button to ensure Recombee database is properly set up.
 > Reset button completelly removes data and structure
 
