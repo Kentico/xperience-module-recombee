@@ -5,6 +5,8 @@ using CMS.Core;
 
 using Xperience.Recombee.Recommendation.Content.Admin.SampleConfiguration;
 
+[assembly: AssemblyDiscoverable]
+
 [assembly: RegisterModule(typeof(SampleModule))]
 
 namespace Xperience.Recombee.Recommendation.Content.Admin.SampleConfiguration
