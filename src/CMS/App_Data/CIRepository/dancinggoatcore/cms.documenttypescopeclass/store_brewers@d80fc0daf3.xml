@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.documenttypescopeclass>
+  <Parent>
+    <GUID>2e686481-6944-4166-9463-5c1fdd6fc04b</GUID>
+    <ObjectType>cms.documenttypescope</ObjectType>
+    <Site>
+      <CodeName>DancingGoatCore</CodeName>
+      <GUID>50ddc16b-9cd7-402f-af01-f3a3feae4ba2</GUID>
+      <ObjectType>cms.site</ObjectType>
+    </Site>
+  </Parent>
+  <Bindings>
+    <Binding id="cms.documenttype_DancingGoatCore.Brewer">
+      <ClassID>
+        <CodeName>DancingGoatCore.Brewer</CodeName>
+        <GUID>f8f202e5-0345-4572-860f-e7b81f313f2e</GUID>
+        <ObjectType>cms.documenttype</ObjectType>
+      </ClassID>
+    </Binding>
+  </Bindings>
+</cms.documenttypescopeclass>

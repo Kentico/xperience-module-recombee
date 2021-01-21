@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.pageurlpath>
+  <PageUrlPathCulture>en-US</PageUrlPathCulture>
+  <PageUrlPathGUID>f241d1ce-fee6-4824-909e-65fcf0bb9175</PageUrlPathGUID>
+  <PageUrlPathNodeID>
+    <CodeName>/Manufacturers/Aerobie/AeroPress-Filters</CodeName>
+    <GUID>c2e42a97-8b9d-4704-8185-bf78a662e225</GUID>
+    <ObjectType>cms.node</ObjectType>
+    <Site>
+      <CodeName>DancingGoatCore</CodeName>
+      <GUID>50ddc16b-9cd7-402f-af01-f3a3feae4ba2</GUID>
+      <ObjectType>cms.site</ObjectType>
+    </Site>
+  </PageUrlPathNodeID>
+  <PageUrlPathSiteID>
+    <CodeName>DancingGoatCore</CodeName>
+    <GUID>50ddc16b-9cd7-402f-af01-f3a3feae4ba2</GUID>
+    <ObjectType>cms.site</ObjectType>
+  </PageUrlPathSiteID>
+  <PageUrlPathUrlPath>Manufacturers/Aerobie/AeroPress-Filters</PageUrlPathUrlPath>
+  <PageUrlPathUrlPathHash>
+    <![CDATA[CCB14EC9737D6A8202ABFC29EA72B96072AF16D17A1608C952D3433EE9CBE506]]>
+  </PageUrlPathUrlPathHash>
+</cms.pageurlpath>

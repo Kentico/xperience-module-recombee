@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.classsite>
+  <Parent>
+    <CodeName>DancingGoatCore.ManualGrinder</CodeName>
+    <GUID>3c47b7bb-e86c-40a9-8b61-6a78a840d6ad</GUID>
+    <ObjectType>cms.documenttype</ObjectType>
+  </Parent>
+  <Bindings>
+    <Binding id="DancingGoatCore">
+      <SiteID>
+        <CodeName>DancingGoatCore</CodeName>
+        <GUID>50ddc16b-9cd7-402f-af01-f3a3feae4ba2</GUID>
+        <ObjectType>cms.site</ObjectType>
+      </SiteID>
+    </Binding>
+  </Bindings>
+</cms.classsite>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.pageurlpath>
+  <PageUrlPathCulture>en-US</PageUrlPathCulture>
+  <PageUrlPathGUID>43f03d45-ceb2-40a1-8a17-64ee238e869b</PageUrlPathGUID>
+  <PageUrlPathNodeID>
+    <CodeName>/Store/Grinders/Hario-Mini-Mill-Slim</CodeName>
+    <GUID>9424ccec-0296-48ef-8bfd-f44565c56c5b</GUID>
+    <ObjectType>cms.node</ObjectType>
+    <Site>
+      <CodeName>DancingGoatCore</CodeName>
+      <GUID>50ddc16b-9cd7-402f-af01-f3a3feae4ba2</GUID>
+      <ObjectType>cms.site</ObjectType>
+    </Site>
+  </PageUrlPathNodeID>
+  <PageUrlPathSiteID>
+    <CodeName>DancingGoatCore</CodeName>
+    <GUID>50ddc16b-9cd7-402f-af01-f3a3feae4ba2</GUID>
+    <ObjectType>cms.site</ObjectType>
+  </PageUrlPathSiteID>
+  <PageUrlPathUrlPath>Store/Grinders/Hario-Mini-Mill-Slim</PageUrlPathUrlPath>
+  <PageUrlPathUrlPathHash>
+    <![CDATA[F7769E4B54A6F9813ACEB86B1BA8DA8F6DA2D0742A441FF7A197856F5716B631]]>
+  </PageUrlPathUrlPathHash>
+</cms.pageurlpath>

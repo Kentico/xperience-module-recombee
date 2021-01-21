@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ecommerce.orderstatus>
+  <StatusColor>#990000</StatusColor>
+  <StatusDisplayName>New</StatusDisplayName>
+  <StatusEnabled>True</StatusEnabled>
+  <StatusGUID>ea2e165e-29fe-4c62-8c37-62e8580fdb96</StatusGUID>
+  <StatusName>New</StatusName>
+  <StatusOrder>1</StatusOrder>
+  <StatusOrderIsPaid>False</StatusOrderIsPaid>
+  <StatusSendNotification>False</StatusSendNotification>
+  <StatusSiteID>
+    <CodeName>DancingGoatCore</CodeName>
+    <GUID>50ddc16b-9cd7-402f-af01-f3a3feae4ba2</GUID>
+    <ObjectType>cms.site</ObjectType>
+  </StatusSiteID>
+</ecommerce.orderstatus>

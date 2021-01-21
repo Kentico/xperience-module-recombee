@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.pageurlpath>
+  <PageUrlPathCulture>en-US</PageUrlPathCulture>
+  <PageUrlPathGUID>cc4a6f16-581b-4e71-b6cc-7c204a7073fc</PageUrlPathGUID>
+  <PageUrlPathNodeID>
+    <CodeName>/Manufacturers/Hario/Bleached-Paper-Filters-V60-01</CodeName>
+    <GUID>ed1235ff-2e88-45da-9887-76f54f299101</GUID>
+    <ObjectType>cms.node</ObjectType>
+    <Site>
+      <CodeName>DancingGoatCore</CodeName>
+      <GUID>50ddc16b-9cd7-402f-af01-f3a3feae4ba2</GUID>
+      <ObjectType>cms.site</ObjectType>
+    </Site>
+  </PageUrlPathNodeID>
+  <PageUrlPathSiteID>
+    <CodeName>DancingGoatCore</CodeName>
+    <GUID>50ddc16b-9cd7-402f-af01-f3a3feae4ba2</GUID>
+    <ObjectType>cms.site</ObjectType>
+  </PageUrlPathSiteID>
+  <PageUrlPathUrlPath>Manufacturers/Hario/Bleached-Paper-Filters-V60-01</PageUrlPathUrlPath>
+  <PageUrlPathUrlPathHash>
+    <![CDATA[F8C6B22822E17FDC683C61986DA7B457F566940B04FF2103606470349CC63D2B]]>
+  </PageUrlPathUrlPathHash>
+</cms.pageurlpath>

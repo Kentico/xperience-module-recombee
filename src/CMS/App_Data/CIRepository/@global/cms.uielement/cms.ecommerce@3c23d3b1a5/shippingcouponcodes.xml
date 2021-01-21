@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.uielement>
+  <ElementAccessCondition />
+  <ElementCaption>{$com.discount.coupons$}</ElementCaption>
+  <ElementCheckModuleReadPermission>False</ElementCheckModuleReadPermission>
+  <ElementDescription />
+  <ElementDisplayName>{$com.discount.coupons$}</ElementDisplayName>
+  <ElementFeature />
+  <ElementFromVersion>8.0</ElementFromVersion>
+  <ElementGUID>27ee605e-8073-4184-8cd2-3d2b06d277c7</ElementGUID>
+  <ElementIsCustom>False</ElementIsCustom>
+  <ElementIsGlobalApplication>False</ElementIsGlobalApplication>
+  <ElementIsMenu>False</ElementIsMenu>
+  <ElementName>ShippingCouponCodes</ElementName>
+  <ElementOrder>2</ElementOrder>
+  <ElementPageTemplateID>
+    <CodeName>Listing</CodeName>
+    <GUID>226b13a3-97c2-4895-99e4-39ea6247a399</GUID>
+    <ObjectType>cms.pagetemplate</ObjectType>
+  </ElementPageTemplateID>
+  <ElementParentID>
+    <CodeName>EditShippingDiscount</CodeName>
+    <GUID>bdb185b8-e0d2-4557-832d-ded0e9db085b</GUID>
+    <ObjectType>cms.uielement</ObjectType>
+    <Parent>
+      <CodeName>CMS.Ecommerce</CodeName>
+      <GUID>684e021b-8b56-4cbf-8fd5-b7a791fd2dbc</GUID>
+      <ObjectType>cms.resource</ObjectType>
+    </Parent>
+  </ElementParentID>
+  <ElementProperties>
+    <Data>
+      <DisplayBreadcrumbs>False</DisplayBreadcrumbs>
+      <EditInDialog>False</EditInDialog>
+      <includejquery>False</includejquery>
+      <informationtext>
+        <![CDATA[{% (!EditedObjectParent.DiscountUsesCoupons)?GetResourceString("com.discount.couponcodenotused"):"" |(identity)GlobalAdministrator|(hash)5fd08392bd3a78eb2af25dec143dc56d15f75f48c9ea0a1d07e203ade89a411e%}]]>
+      </informationtext>
+      <ObjectType>ecommerce.couponcode</ObjectType>
+      <OpenInDialog>False</OpenInDialog>
+      <PageExtenderAssemblyName>CMS.Ecommerce.Web.UI</PageExtenderAssemblyName>
+      <PageExtenderClassName>CMS.Ecommerce.Web.UI.CouponCodesListPageExtender</PageExtenderClassName>
+      <ParentObjectType>ecommerce.discount</ParentObjectType>
+      <Text>{% GetCouponsMessage(EditedObjectParent); %}</Text>
+      <WhereCondition ismacro="True">
+        <![CDATA[CouponCodeDiscountID= {%EditedObjectParent.DiscountID|(identity)GlobalAdministrator|(hash)8643c95a849a35eb677c80ab0ed94efce4b9c832cf18ec2e09dad67ad7603c1e%}]]>
+      </WhereCondition>
+      <ZeroRowsText>{$com.discount.codenodatafound$}</ZeroRowsText>
+    </Data>
+  </ElementProperties>
+  <ElementRequiresGlobalAdminPriviligeLevel>False</ElementRequiresGlobalAdminPriviligeLevel>
+  <ElementResourceID>
+    <CodeName>CMS.Ecommerce</CodeName>
+    <GUID>684e021b-8b56-4cbf-8fd5-b7a791fd2dbc</GUID>
+    <ObjectType>cms.resource</ObjectType>
+  </ElementResourceID>
+  <ElementSize>0</ElementSize>
+  <ElementTargetURL />
+  <ElementType>PageTemplate</ElementType>
+  <ElementVisibilityCondition>
+    <![CDATA[{%EditedObject.HasOrUsesCoupon|(identity)GlobalAdministrator|(hash)c05c01b3f5cc8c020fcfe361bd423f793a68a0d509e2803b5ae92ad02ab6f3c9%}]]>
+  </ElementVisibilityCondition>
+</cms.uielement>

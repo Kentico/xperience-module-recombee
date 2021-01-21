@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.metafile>
+  <MetaFileExtension>.jpg</MetaFileExtension>
+  <MetaFileGroupName>Image</MetaFileGroupName>
+  <MetaFileGUID>13093933-3544-4854-ad2e-ccd657617fd5</MetaFileGUID>
+  <MetaFileImageHeight>1080</MetaFileImageHeight>
+  <MetaFileImageWidth>1080</MetaFileImageWidth>
+  <MetaFileMimeType>image/jpeg</MetaFileMimeType>
+  <MetaFileName>kenya.jpg</MetaFileName>
+  <MetaFileObjectID>
+    <GUID>8823bd79-f158-439f-bbb9-3799eb130cfa</GUID>
+    <ObjectType>ecommerce.sku</ObjectType>
+    <Site>
+      <CodeName>DancingGoatCore</CodeName>
+      <GUID>50ddc16b-9cd7-402f-af01-f3a3feae4ba2</GUID>
+      <ObjectType>cms.site</ObjectType>
+    </Site>
+  </MetaFileObjectID>
+  <MetaFileObjectType>ecommerce.sku</MetaFileObjectType>
+  <MetaFileSiteID>
+    <CodeName>DancingGoatCore</CodeName>
+    <GUID>50ddc16b-9cd7-402f-af01-f3a3feae4ba2</GUID>
+    <ObjectType>cms.site</ObjectType>
+  </MetaFileSiteID>
+  <MetaFileSize>74683</MetaFileSize>
+</cms.metafile>

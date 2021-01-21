@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ecommerce.couponcode>
+  <CouponCodeCode>DGCOREGIOT7</CouponCodeCode>
+  <CouponCodeDiscountID>
+    <CodeName>10_OffForTheFirstOrder</CodeName>
+    <GUID>8abe626a-c8eb-4ad5-b887-1100c9a01b02</GUID>
+    <ObjectType>ecommerce.discount</ObjectType>
+    <Site>
+      <CodeName>DancingGoatCore</CodeName>
+      <GUID>50ddc16b-9cd7-402f-af01-f3a3feae4ba2</GUID>
+      <ObjectType>cms.site</ObjectType>
+    </Site>
+  </CouponCodeDiscountID>
+  <CouponCodeGUID>86d0f36c-d7e8-494a-8523-8d750f677af1</CouponCodeGUID>
+  <CouponCodeUseLimit>1</CouponCodeUseLimit>
+</ecommerce.couponcode>

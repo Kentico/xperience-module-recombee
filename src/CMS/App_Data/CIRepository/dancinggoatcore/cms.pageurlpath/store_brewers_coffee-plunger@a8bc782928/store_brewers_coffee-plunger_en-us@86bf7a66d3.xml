@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.pageurlpath>
+  <PageUrlPathCulture>en-US</PageUrlPathCulture>
+  <PageUrlPathGUID>c790a12a-6dea-4694-81dd-862d85f26fa6</PageUrlPathGUID>
+  <PageUrlPathNodeID>
+    <CodeName>/Store/Brewers/Coffee-Plunger</CodeName>
+    <GUID>b5f9b841-7b1a-44b3-9fcb-d339020e9e17</GUID>
+    <ObjectType>cms.node</ObjectType>
+    <Site>
+      <CodeName>DancingGoatCore</CodeName>
+      <GUID>50ddc16b-9cd7-402f-af01-f3a3feae4ba2</GUID>
+      <ObjectType>cms.site</ObjectType>
+    </Site>
+  </PageUrlPathNodeID>
+  <PageUrlPathSiteID>
+    <CodeName>DancingGoatCore</CodeName>
+    <GUID>50ddc16b-9cd7-402f-af01-f3a3feae4ba2</GUID>
+    <ObjectType>cms.site</ObjectType>
+  </PageUrlPathSiteID>
+  <PageUrlPathUrlPath>Store/Brewers/Coffee-Plunger</PageUrlPathUrlPath>
+  <PageUrlPathUrlPathHash>
+    <![CDATA[047FD21C364224EC817DA8BE4EAB66A6B11498F6FD48B5BF1AE6165307AE3440]]>
+  </PageUrlPathUrlPathHash>
+</cms.pageurlpath>

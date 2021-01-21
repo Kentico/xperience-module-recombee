@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.transformation>
+  <TransformationClassID>
+    <CodeName>Ecommerce.Transformations</CodeName>
+    <GUID>7539c21d-cde0-4d71-ab9f-12de5ddec092</GUID>
+    <ObjectType>cms.documenttype</ObjectType>
+  </TransformationClassID>
+  <TransformationCode>
+<![CDATA[
+{% if (Customer.CustomerCompany != null) { %}
+  {% Localize(Customer.CustomerCompany)|(encode)true } %}
+  <br />
+{% } |(identity)GlobalAdministrator|(hash)15bfe02c53cf4f045a557c87ae96ba83efa837b14348c45003ad37a55892d54f%}
+{% if (Customer.CustomerTaxRegistrationID != null) { %}
+  Tax registration ID: 
+  {% Localize(Customer.CustomerTaxRegistrationID)|(encode)true } %}
+  <br />
+{% } |(identity)GlobalAdministrator|(hash)e3fcc579e93c53dc4e07003e9225b7a2edfdff5bf9969aedf6ca86213655efa0%}
+{% if (Customer.CustomerOrganizationID != null) { %}
+  Organization ID:
+  {% Localize(Customer.CustomerOrganizationID)|(encode)true } %}
+  <br />
+{% } |(identity)GlobalAdministrator|(hash)e48353dfd9463d9b3b6f7282171ccabf7fd42ec5f0aaa7dbe5a9745f9bbceb4d%}
+
+{% Localize(AddressPersonalName)|(encode)true %}<br />
+{% Localize(AddressLine1)|(encode)true %}<br />
+{% if (AddressLine2 != null) { %}
+  {% Localize(AddressLine2)|(encode)true } %}
+  <br />
+{% } |(identity)GlobalAdministrator|(hash)094e21774c134eac8fbb32326d09fd128d3bcc2e903a3a52139b45e36f7ee379%}
+{% Localize(AddressCity)|(encode)true %}<br />
+{% Localize(AddressZip)|(encode)true %}<br />
+{% Localize(Country.CountryDisplayName)|(encode)true |(identity)GlobalAdministrator|(hash)7f36aa1eb9dcac7a53e58a9c7f5ebefd2da5c556d53a59ffe173c557ab4db48f%}{% if (State != null) { ", " + Localize(State.StateDisplayName)|(encode)true } |(identity)GlobalAdministrator|(hash)c50003f3069df5ed9933529707b457e3a06dd404978a68ae8cb9303fffec0d58%}
+
+]]>
+  </TransformationCode>
+  <TransformationGUID>1975f66d-874f-4caa-b9e5-627aeb0b2233</TransformationGUID>
+  <TransformationName>Order_Address</TransformationName>
+  <TransformationType>text</TransformationType>
+</cms.transformation>

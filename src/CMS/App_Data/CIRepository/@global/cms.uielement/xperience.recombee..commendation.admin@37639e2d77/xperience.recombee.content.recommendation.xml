@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.uielement>
+  <ElementCaption>Recombee content recommendation</ElementCaption>
+  <ElementCheckModuleReadPermission>True</ElementCheckModuleReadPermission>
+  <ElementDisplayName>Recombee content recommendation</ElementDisplayName>
+  <ElementGUID>f193968d-6be3-4b5a-a71e-bdc07d6c03be</ElementGUID>
+  <ElementIconClass>icon-app-content</ElementIconClass>
+  <ElementIconPath />
+  <ElementIsCustom>True</ElementIsCustom>
+  <ElementIsGlobalApplication>False</ElementIsGlobalApplication>
+  <ElementIsMenu>False</ElementIsMenu>
+  <ElementName>Xperience.Recombee.Content.Recommendation</ElementName>
+  <ElementOrder>39</ElementOrder>
+  <ElementParentID>
+    <CodeName>Configuration</CodeName>
+    <GUID>506f9619-daa6-40a7-a104-2e414d22e19f</GUID>
+    <ObjectType>cms.uielement</ObjectType>
+    <Parent>
+      <CodeName>CMS</CodeName>
+      <GUID>ce1a65a0-80dc-4c53-b0e7-bdecf0aa8c02</GUID>
+      <ObjectType>cms.resource</ObjectType>
+    </Parent>
+  </ElementParentID>
+  <ElementProperties>
+    <Data>
+      <DisplayBreadcrumbs>False</DisplayBreadcrumbs>
+    </Data>
+  </ElementProperties>
+  <ElementRequiresGlobalAdminPriviligeLevel>False</ElementRequiresGlobalAdminPriviligeLevel>
+  <ElementResourceID>
+    <CodeName>Xperience.Recombee.Content.Recommendation.Admin</CodeName>
+    <GUID>2d0c22a6-f2d7-4950-a161-c9a9cdbb0aae</GUID>
+    <ObjectType>cms.resource</ObjectType>
+  </ElementResourceID>
+  <ElementSize>0</ElementSize>
+  <ElementTargetURL>
+    <![CDATA[~/CMSModules/Xperience.Recombee.Recommendation.Content.Admin/Recombee_setup.aspx]]>
+  </ElementTargetURL>
+  <ElementType>Url</ElementType>
+</cms.uielement>

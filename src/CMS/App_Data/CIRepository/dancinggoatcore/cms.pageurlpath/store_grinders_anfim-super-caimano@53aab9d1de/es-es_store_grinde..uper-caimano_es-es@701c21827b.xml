@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.pageurlpath>
+  <PageUrlPathCulture>es-ES</PageUrlPathCulture>
+  <PageUrlPathGUID>e8c9a7c0-636d-488d-be85-fe26909d3c3f</PageUrlPathGUID>
+  <PageUrlPathNodeID>
+    <CodeName>/Store/Grinders/Anfim-Super-Caimano</CodeName>
+    <GUID>66b7ff48-b644-46a6-9be6-f93f9da2f13d</GUID>
+    <ObjectType>cms.node</ObjectType>
+    <Site>
+      <CodeName>DancingGoatCore</CodeName>
+      <GUID>50ddc16b-9cd7-402f-af01-f3a3feae4ba2</GUID>
+      <ObjectType>cms.site</ObjectType>
+    </Site>
+  </PageUrlPathNodeID>
+  <PageUrlPathSiteID>
+    <CodeName>DancingGoatCore</CodeName>
+    <GUID>50ddc16b-9cd7-402f-af01-f3a3feae4ba2</GUID>
+    <ObjectType>cms.site</ObjectType>
+  </PageUrlPathSiteID>
+  <PageUrlPathUrlPath>es-ES/Store/Grinders/Anfim-Super-Caimano</PageUrlPathUrlPath>
+  <PageUrlPathUrlPathHash>
+    <![CDATA[674843EB97D7D75B0AAD48263949982C52E90C1257A7CB84AD1C43648B040AA4]]>
+  </PageUrlPathUrlPathHash>
+</cms.pageurlpath>
