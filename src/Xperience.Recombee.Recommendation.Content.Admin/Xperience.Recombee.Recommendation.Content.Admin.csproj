@@ -18,7 +18,7 @@
       <HintPath>..\Lib\CMS.Base.dll</HintPath>
     </Reference>
     <Reference Include="CMS.Base.Web.UI">
-      <HintPath>..\CMS\bin\CMS.Base.Web.UI.dll</HintPath>
+      <HintPath>..\Lib\CMS.Base.Web.UI.dll</HintPath>
     </Reference>
     <Reference Include="CMS.Core">
       <HintPath>..\Lib\CMS.Core.dll</HintPath>
@@ -30,7 +30,7 @@
       <HintPath>..\Lib\CMS.DocumentEngine.dll</HintPath>
     </Reference>
     <Reference Include="CMS.Membership">
-      <HintPath>..\CMS\bin\CMS.Membership.dll</HintPath>
+      <HintPath>..\Lib\CMS.Membership.dll</HintPath>
     </Reference>
     <Reference Include="CMS.UIControls">
       <HintPath>..\Lib\CMS.UIControls.dll</HintPath>

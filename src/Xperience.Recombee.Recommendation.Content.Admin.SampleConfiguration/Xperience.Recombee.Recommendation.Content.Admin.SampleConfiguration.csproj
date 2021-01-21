@@ -10,16 +10,16 @@
 
   <ItemGroup>
     <Reference Include="CMS.Base">
-      <HintPath>..\CMS\bin\CMS.Base.dll</HintPath>
+      <HintPath>..\Lib\CMS.Base.dll</HintPath>
     </Reference>
     <Reference Include="CMS.Core">
-      <HintPath>..\CMS\bin\CMS.Core.dll</HintPath>
+      <HintPath>..\Lib\CMS.Core.dll</HintPath>
     </Reference>
     <Reference Include="CMS.DataEngine">
-      <HintPath>..\CMS\bin\CMS.DataEngine.dll</HintPath>
+      <HintPath>..\Lib\CMS.DataEngine.dll</HintPath>
     </Reference>
     <Reference Include="CMS.DocumentEngine">
-      <HintPath>..\CMS\bin\CMS.DocumentEngine.dll</HintPath>
+      <HintPath>..\Lib\CMS.DocumentEngine.dll</HintPath>
     </Reference>
   </ItemGroup>
   
