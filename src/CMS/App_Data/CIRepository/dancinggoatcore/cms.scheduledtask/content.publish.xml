@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.scheduledtask>
+  <TaskAllowExternalService>False</TaskAllowExternalService>
+  <TaskAssemblyName>CMS.DocumentEngine</TaskAssemblyName>
+  <TaskAvailability>0</TaskAvailability>
+  <TaskClass>CMS.DocumentEngine.ContentPublisher</TaskClass>
+  <TaskCondition />
+  <TaskData />
+  <TaskDeleteAfterLastRun>False</TaskDeleteAfterLastRun>
+  <TaskDisplayName>Content publishing</TaskDisplayName>
+  <TaskEnabled>True</TaskEnabled>
+  <TaskGUID>167e8eac-7d04-41d9-8678-64c68dc342e9</TaskGUID>
+  <TaskInterval>
+    <![CDATA[minute;10/14/2015 9:23:16 AM;1;00:00:00;23:59:00;Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday]]>
+  </TaskInterval>
+  <TaskName>Content.Publish</TaskName>
+  <TaskRunIndividually>False</TaskRunIndividually>
+  <TaskRunInSeparateThread>True</TaskRunInSeparateThread>
+  <TaskServerName />
+  <TaskSiteID>
+    <CodeName>DancingGoatCore</CodeName>
+    <GUID>50ddc16b-9cd7-402f-af01-f3a3feae4ba2</GUID>
+    <ObjectType>cms.site</ObjectType>
+  </TaskSiteID>
+  <TaskUseExternalService>False</TaskUseExternalService>
+</cms.scheduledtask>
