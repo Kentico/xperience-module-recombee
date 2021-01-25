@@ -13,7 +13,7 @@ namespace Kentico.Xperience.Recombee
     /// </summary>
     public class Module : CMS.DataEngine.Module
     {
-        public const string NAME = "Xperience.Recombee.Recommendation.Content";
+        public const string NAME = "Kentico.Xperience.Recombee";
     
     
         /// <summary>
