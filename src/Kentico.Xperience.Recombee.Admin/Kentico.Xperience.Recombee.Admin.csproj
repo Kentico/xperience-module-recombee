@@ -5,8 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="..\CMS\CMSModules\Xperience.Recombee.Recommendation.Content.Admin\Recombee_setup.aspx.cs" Link="Pages\Recombee_setup.aspx.cs" />
-    <Compile Include="..\CMS\CMSModules\Xperience.Recombee.Recommendation.Content.Admin\Recombee_setup.aspx.designer.cs" Link="Pages\Recombee_setup.aspx.designer.cs" />
+    <Compile Include="..\CMS\CMSModules\Kentico.Xperience.Recombee.Admin\Recombee_setup.aspx.cs" Link="Pages\Recombee_setup.aspx.cs" />
+    <Compile Include="..\CMS\CMSModules\Kentico.Xperience.Recombee.Admin\Recombee_setup.aspx.designer.cs" Link="Pages\Recombee_setup.aspx.designer.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -43,7 +43,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="..\CMS\CMSModules\Xperience.Recombee.Recommendation.Content.Admin\Recombee_setup.aspx" Link="Pages\Recombee_setup.aspx" />
+    <None Include="..\CMS\CMSModules\Kentico.Xperience.Recombee.Admin\Recombee_setup.aspx" Link="Pages\Recombee_setup.aspx" />
   </ItemGroup>
 
 </Project>

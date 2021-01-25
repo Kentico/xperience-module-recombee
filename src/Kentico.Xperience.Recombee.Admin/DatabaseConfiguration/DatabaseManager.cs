@@ -8,7 +8,7 @@ using Recombee.ApiClient;
 using Recombee.ApiClient.ApiRequests;
 
 
-namespace Xperience.Recombee.Recommendation.Content.Admin
+namespace Kentico.Xperience.Recombee.Admin
 {
     /// <summary>
     /// Performs initialization and reset of the Recommbee database.

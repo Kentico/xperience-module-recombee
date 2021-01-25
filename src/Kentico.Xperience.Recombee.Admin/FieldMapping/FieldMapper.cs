@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 using CMS.DocumentEngine;
 
-namespace Xperience.Recombee.Recommendation.Content.Admin
+namespace Kentico.Xperience.Recombee.Admin
 {
     /// <summary>
     /// Performs mapping of page type fields to Recombee database item properties.

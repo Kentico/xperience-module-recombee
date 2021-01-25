@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Xperience.Recombee.Recommendation.Content.Admin
+namespace Kentico.Xperience.Recombee.Admin
 {
     /// <summary>
     /// Represents configuration of individual page types and how they are mapped to the Recombee DB.

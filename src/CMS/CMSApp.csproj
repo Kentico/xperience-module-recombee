@@ -14333,13 +14333,13 @@
     <Content Include="CMSScripts\WebComponents\shadow-css-8a020e34.system.js" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Xperience.Recombee.Recommendation.Content.Admin.SampleConfiguration\Xperience.Recombee.Recommendation.Content.Admin.SampleConfiguration.csproj">
-      <Project>{c9cfe005-bcca-45cc-8a38-2f931fb4a0cd}</Project>
-      <Name>Xperience.Recombee.Recommendation.Content.Admin.SampleConfiguration</Name>
+    <ProjectReference Include="..\Kentico.Xperience.Recombee.Admin.SampleConfiguration\Kentico.Xperience.Recombee.Admin.SampleConfiguration.csproj">
+      <Project>{98cb5007-a488-4ff4-b01f-1b8342f977e8}</Project>
+      <Name>Kentico.Xperience.Recombee.Admin.SampleConfiguration</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Xperience.Recombee.Recommendation.Content.Admin\Xperience.Recombee.Recommendation.Content.Admin.csproj">
-      <Project>{145aa712-ddc1-4a40-ac14-f6d7527ed5bb}</Project>
-      <Name>Xperience.Recombee.Recommendation.Content.Admin</Name>
+    <ProjectReference Include="..\Kentico.Xperience.Recombee.Admin\Kentico.Xperience.Recombee.Admin.csproj">
+      <Project>{48133250-7f91-48c7-8e5b-b7070468e9d3}</Project>
+      <Name>Kentico.Xperience.Recombee.Admin</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

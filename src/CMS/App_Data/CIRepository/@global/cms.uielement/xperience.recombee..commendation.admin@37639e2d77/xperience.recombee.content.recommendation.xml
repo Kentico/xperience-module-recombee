@@ -34,7 +34,7 @@
   </ElementResourceID>
   <ElementSize>0</ElementSize>
   <ElementTargetURL>
-    <![CDATA[~/CMSModules/Xperience.Recombee.Recommendation.Content.Admin/Recombee_setup.aspx]]>
+    <![CDATA[~/CMSModules/Kentico.Xperience.Recombee.Admin/Recombee_setup.aspx]]>
   </ElementTargetURL>
   <ElementType>Url</ElementType>
 </cms.uielement>

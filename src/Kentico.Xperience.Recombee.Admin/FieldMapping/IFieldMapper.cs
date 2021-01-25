@@ -4,11 +4,11 @@ using System.Collections.Generic;
 using CMS;
 using CMS.DocumentEngine;
 
-using Xperience.Recombee.Recommendation.Content.Admin;
+using Kentico.Xperience.Recombee.Admin;
 
 [assembly: RegisterImplementation(typeof(IFieldMapper), typeof(FieldMapper), Lifestyle = CMS.Core.Lifestyle.Singleton, Priority = CMS.Core.RegistrationPriority.Fallback)]
 
-namespace Xperience.Recombee.Recommendation.Content.Admin
+namespace Kentico.Xperience.Recombee.Admin
 {
     /// <summary>
     /// Performs mapping of page type fields to Recombee database item properties.

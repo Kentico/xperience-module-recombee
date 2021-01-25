@@ -2,20 +2,20 @@
 using CMS.Core;
 using CMS.DocumentEngine;
 
-using Xperience.Recombee.Recommendation.Content.Admin;
+using Kentico.Xperience.Recombee.Admin;
 
 [assembly: AssemblyDiscoverable]
 
 [assembly: RegisterModule(typeof(Module))]
 
-namespace Xperience.Recombee.Recommendation.Content.Admin
+namespace Kentico.Xperience.Recombee.Admin
 {
     /// <summary>
     /// Represents the Recombee content recommendation module for the Xperience admin interface.
     /// </summary>
     public class Module : CMS.DataEngine.Module
     {
-        public const string NAME = "Xperience.Recombee.Recommendation.Content.Admin";
+        public const string NAME = "Kentico.Xperience.Recombee.Admin";
 
         private IContentService mContentService;
 

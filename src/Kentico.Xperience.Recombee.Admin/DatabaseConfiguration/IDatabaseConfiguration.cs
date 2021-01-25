@@ -2,11 +2,11 @@
 
 using System.Collections.Generic;
 
-using Xperience.Recombee.Recommendation.Content.Admin;
+using Kentico.Xperience.Recombee.Admin;
 
 [assembly: RegisterImplementation(typeof(IDatabaseConfiguration), typeof(DatabaseConfiguration), Lifestyle = CMS.Core.Lifestyle.Singleton, Priority = CMS.Core.RegistrationPriority.Fallback)]
 
-namespace Xperience.Recombee.Recommendation.Content.Admin
+namespace Kentico.Xperience.Recombee.Admin
 {
     /// <summary>
     /// Maintains the Recombee database configuration for individual sites.

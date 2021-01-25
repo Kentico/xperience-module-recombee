@@ -3,13 +3,13 @@
 using CMS;
 using CMS.Core;
 
-using Xperience.Recombee.Recommendation.Content.Admin.SampleConfiguration;
+using Kentico.Xperience.Recombee.Admin.SampleConfiguration;
 
 [assembly: AssemblyDiscoverable]
 
 [assembly: RegisterModule(typeof(SampleModule))]
 
-namespace Xperience.Recombee.Recommendation.Content.Admin.SampleConfiguration
+namespace Kentico.Xperience.Recombee.Admin.SampleConfiguration
 {
     /// <summary>
     /// Represents a sample that shows how to configure page type mappings for DancingGoatCore site for the Recombee content recommendation module for the Xperience admin interface.
@@ -19,7 +19,7 @@ namespace Xperience.Recombee.Recommendation.Content.Admin.SampleConfiguration
         /// <summary>
         /// Initializes a new instance of the <see cref="SampleModule"/> class.
         /// </summary>
-        public SampleModule() : base("Xperience.Recombee.Recommendation.Content.Admin.SampleConfiguration")
+        public SampleModule() : base("Kentico.Xperience.Recombee.Admin.SampleConfiguration")
         {
         }
 

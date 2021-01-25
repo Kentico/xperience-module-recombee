@@ -2,7 +2,7 @@
 
 using CMS.Core;
 
-namespace Xperience.Recombee.Recommendation.Content.Admin
+namespace Kentico.Xperience.Recombee.Admin
 {
     /// <summary>
     /// Provides configuration of the Recombee service.

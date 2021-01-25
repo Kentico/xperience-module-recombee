@@ -5,11 +5,11 @@ using System.Text;
 using CMS;
 using CMS.DocumentEngine;
 
-using Xperience.Recombee.Recommendation.Content.Admin;
+using Kentico.Xperience.Recombee.Admin;
 
 [assembly: RegisterImplementation(typeof(IContentService), typeof(ContentService), Lifestyle = CMS.Core.Lifestyle.Singleton, Priority = CMS.Core.RegistrationPriority.Fallback)]
 
-namespace Xperience.Recombee.Recommendation.Content.Admin
+namespace Kentico.Xperience.Recombee.Admin
 {
     /// <summary>
     /// Manages pages in the corresponding site's Recombee database.

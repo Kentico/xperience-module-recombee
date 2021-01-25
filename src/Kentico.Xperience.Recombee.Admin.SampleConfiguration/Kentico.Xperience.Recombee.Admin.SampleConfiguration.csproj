@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Xperience.Recombee.Recommendation.Content.Admin\Xperience.Recombee.Recommendation.Content.Admin.csproj" />
+    <ProjectReference Include="..\Kentico.Xperience.Recombee.Admin\Kentico.Xperience.Recombee.Admin.csproj" />
   </ItemGroup>
 
   <ItemGroup>

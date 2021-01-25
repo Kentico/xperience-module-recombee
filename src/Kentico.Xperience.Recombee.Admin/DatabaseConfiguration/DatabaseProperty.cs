@@ -1,4 +1,4 @@
-﻿namespace Xperience.Recombee.Recommendation.Content.Admin
+﻿namespace Kentico.Xperience.Recombee.Admin
 {
     /// <summary>
     /// Represents an item property in the Recombee database.

@@ -1,12 +1,12 @@
 ﻿using CMS;
 
-using Xperience.Recombee.Recommendation.Content.Admin;
+using Kentico.Xperience.Recombee.Admin;
 
 using Recombee.ApiClient;
 
 [assembly: RegisterImplementation(typeof(IDatabaseManager), typeof(DatabaseManager), Lifestyle = CMS.Core.Lifestyle.Singleton, Priority = CMS.Core.RegistrationPriority.Fallback)]
 
-namespace Xperience.Recombee.Recommendation.Content.Admin
+namespace Kentico.Xperience.Recombee.Admin
 {
     /// <summary>
     /// Performs initialization and reset of the Recommbee database.

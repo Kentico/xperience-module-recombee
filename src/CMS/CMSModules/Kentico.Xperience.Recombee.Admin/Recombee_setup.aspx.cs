@@ -6,7 +6,7 @@ using CMS.DataEngine;
 using CMS.Membership;
 using CMS.UIControls;
 
-using Xperience.Recombee.Recommendation.Content.Admin;
+using Kentico.Xperience.Recombee.Admin;
 
 [UIElement("Xperience.Recombee.Content.Recommendation.Admin", "Xperience.Recombee.Content.Recommendation")]
 public partial class CMSModules_Recombee_setup : CMSPage
@@ -44,7 +44,7 @@ public partial class CMSModules_Recombee_setup : CMSPage
 
             ShowInformation("Recombee content recommendation is not available. Specify the Recombee Database ID and Private Token in the application configuration file.");
         }
-        else if(!UserInfoProvider.IsAuthorizedPerResource(Xperience.Recombee.Recommendation.Content.Admin.Module.NAME, "Modify", CurrentSiteName, CurrentUser))
+        else if(!UserInfoProvider.IsAuthorizedPerResource(Kentico.Xperience.Recombee.Admin.Module.NAME, "Modify", CurrentSiteName, CurrentUser))
         {
             btnIntDbStructure.Enabled = false;
             btnResetDatabase.Enabled = false;

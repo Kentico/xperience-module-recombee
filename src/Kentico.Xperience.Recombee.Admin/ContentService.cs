@@ -9,7 +9,7 @@ using Recombee.ApiClient;
 using Recombee.ApiClient.ApiRequests;
 using Recombee.ApiClient.Bindings;
 
-namespace Xperience.Recombee.Recommendation.Content.Admin
+namespace Kentico.Xperience.Recombee.Admin
 {
     /// <summary>
     /// Manages pages in the corresponding site's Recombee database.

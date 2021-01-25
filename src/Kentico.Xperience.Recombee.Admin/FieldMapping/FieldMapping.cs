@@ -2,7 +2,7 @@
 
 using CMS.DocumentEngine;
 
-namespace Xperience.Recombee.Recommendation.Content.Admin
+namespace Kentico.Xperience.Recombee.Admin
 {
     /// <summary>
     /// Represents a page type field to Recombee database item property mapping.
