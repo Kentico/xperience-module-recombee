@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.settingskey>
+  <KeyCategoryID>
+    <CodeName>CMS.WebSite.Search</CodeName>
+    <ObjectType>cms.settingscategory</ObjectType>
+  </KeyCategoryID>
+  <KeyDescription>{$settingskey.CMSSearchAllowedFileTypesdesc$}</KeyDescription>
+  <KeyDisplayName>{$settingskey.CMSSearchAllowedFileTypes$}</KeyDisplayName>
+  <KeyEditingControlPath>MultipleChoiceControl</KeyEditingControlPath>
+  <KeyExplanationText />
+  <KeyFormControlSettings>
+    <settings>
+      <Options>
+        <![CDATA[{%GetSupportedContentExtractors().Replace(", ", "\n") |(identity)GlobalAdministrator|(hash)7f347656f841a31ca21bc0c3a6a3a936dec8736e6ec96d894e7d33b0bf8d00b1%}]]>
+      </Options>
+      <RepeatDirection>vertical</RepeatDirection>
+      <RepeatLayout>Flow</RepeatLayout>
+      <Separator>;</Separator>
+    </settings>
+  </KeyFormControlSettings>
+  <KeyGUID>725fc937-c95d-454c-8eed-d84767335062</KeyGUID>
+  <KeyIsCustom>False</KeyIsCustom>
+  <KeyIsGlobal>False</KeyIsGlobal>
+  <KeyIsHidden>False</KeyIsHidden>
+  <KeyName>CMSSearchAllowedFileTypes</KeyName>
+  <KeyOrder>5</KeyOrder>
+  <KeyType>string</KeyType>
+</cms.settingskey>

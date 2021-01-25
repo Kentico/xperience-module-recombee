@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.settingskey>
+  <KeyCategoryID>
+    <CodeName>CMS.Integration.SalesForce.LeadReplication</CodeName>
+    <ObjectType>cms.settingscategory</ObjectType>
+  </KeyCategoryID>
+  <KeyDefaultValue>
+    <![CDATA[{%Contact.ContactLastName|(identity)GlobalAdministrator|(hash)b04f7a320c99366da407cad5328983dff5bd01c0b2c71b0ce599ede660b33515%}]]>
+  </KeyDefaultValue>
+  <KeyDescription>
+    <![CDATA[{$settingskey.cmssalesforceleadreplicationleaddescription.description$}]]>
+  </KeyDescription>
+  <KeyDisplayName>
+    <![CDATA[{$settingskey.cmssalesforceleadreplicationleaddescription$}]]>
+  </KeyDisplayName>
+  <KeyEditingControlPath>
+    <![CDATA[~/CMSModules/ContactManagement/FormControls/SalesForce/Description.ascx]]>
+  </KeyEditingControlPath>
+  <KeyExplanationText />
+  <KeyGUID>6db7b9fd-cc0a-4a55-b331-2ba5ab4d64ef</KeyGUID>
+  <KeyIsCustom>False</KeyIsCustom>
+  <KeyIsGlobal>True</KeyIsGlobal>
+  <KeyIsHidden>False</KeyIsHidden>
+  <KeyName>CMSSalesForceLeadReplicationLeadDescription</KeyName>
+  <KeyOrder>7</KeyOrder>
+  <KeyType>string</KeyType>
+  <KeyValue>
+    <![CDATA[{%Contact.ContactLastName|(identity)GlobalAdministrator|(hash)b04f7a320c99366da407cad5328983dff5bd01c0b2c71b0ce599ede660b33515%}]]>
+  </KeyValue>
+</cms.settingskey>

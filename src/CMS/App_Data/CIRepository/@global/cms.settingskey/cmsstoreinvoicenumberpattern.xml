@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.settingskey>
+  <KeyCategoryID>
+    <CodeName>CMS.Ecommerce.Invoice</CodeName>
+    <ObjectType>cms.settingscategory</ObjectType>
+  </KeyCategoryID>
+  <KeyDefaultValue>
+    <![CDATA[{%Order.OrderID|(identity)GlobalAdministrator|(hash)47aab9b6b8b6d644c6cb2bc75e520afd10ee631f80f386e7c7d13b826c02654b%}]]>
+  </KeyDefaultValue>
+  <KeyDescription>
+    <![CDATA[{$settingskey.CMSStoreInvoiceNumberPattern.description$}]]>
+  </KeyDescription>
+  <KeyDisplayName>{$settingskey.CMSStoreInvoiceNumberPattern$}</KeyDisplayName>
+  <KeyEditingControlPath>TextBoxControl</KeyEditingControlPath>
+  <KeyExplanationText />
+  <KeyFormControlSettings>
+    <settings>
+      <AutoCompleteEnableCaching>False</AutoCompleteEnableCaching>
+      <AutoCompleteFirstRowSelected>False</AutoCompleteFirstRowSelected>
+      <Trim>False</Trim>
+      <AutoCompleteShowOnlyCurrentWordInCompletionListItem>False</AutoCompleteShowOnlyCurrentWordInCompletionListItem>
+      <FilterMode>False</FilterMode>
+    </settings>
+  </KeyFormControlSettings>
+  <KeyGUID>9f7a211f-f341-47da-94d2-1feae2aa694c</KeyGUID>
+  <KeyIsCustom>False</KeyIsCustom>
+  <KeyIsGlobal>False</KeyIsGlobal>
+  <KeyIsHidden>False</KeyIsHidden>
+  <KeyName>CMSStoreInvoiceNumberPattern</KeyName>
+  <KeyOrder>1</KeyOrder>
+  <KeyType>string</KeyType>
+  <KeyValue>
+    <![CDATA[{%Order.OrderID|(identity)GlobalAdministrator|(hash)47aab9b6b8b6d644c6cb2bc75e520afd10ee631f80f386e7c7d13b826c02654b%}]]>
+  </KeyValue>
+</cms.settingskey>
