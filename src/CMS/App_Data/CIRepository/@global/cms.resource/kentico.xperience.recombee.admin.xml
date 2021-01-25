@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <cms.resource>
+  <ResourceAuthor>Kentico Software</ResourceAuthor>
   <ResourceDescription>
-    <![CDATA[Kentico Xperience integration with Recombee Artificial Intelligence Powered Recommender as a Service.]]>
+    <![CDATA[A custom module for the Xperience integration with Recombee AI-Powered Recommender. Should be installed in the Kentico Xperience Administration Project/Site.]]>
   </ResourceDescription>
   <ResourceDisplayName>Recombee content recommendation</ResourceDisplayName>
   <ResourceGUID>2d0c22a6-f2d7-4950-a161-c9a9cdbb0aae</ResourceGUID>
