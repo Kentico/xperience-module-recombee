@@ -1,4 +1,4 @@
-# xperience-module-recombee-recommendations
+# xperience-module-recombe
 Recombee recommendations for Kentico Xperience
 
 This repository contains source code for integration of Kentico Xperience and Recombee Artificial Intelligence Powered Recommender as a Service.
