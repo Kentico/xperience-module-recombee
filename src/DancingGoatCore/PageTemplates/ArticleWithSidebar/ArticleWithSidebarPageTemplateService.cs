@@ -11,7 +11,7 @@ using DancingGoat.PageTemplates;
 using Kentico.Content.Web.Mvc;
 using Kentico.PageBuilder.Web.Mvc.PageTemplates;
 
-using Xperience.Recombee.Recommendation.Content;
+using Kentico.Xperience.Recombee;
 
 [assembly: RegisterPageTemplate("DancingGoat.ArticleWithSidebar", "Article with sidebar", typeof(ArticleWithSideBarProperties), "~/PageTemplates/ArticleWithSidebar/_ArticleWithSidebar.cshtml", Description = "Displays an article detail with related articles on the right side.", IconClass = "icon-l-text-col")]
 

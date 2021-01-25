@@ -1,10 +1,10 @@
 ﻿using CMS;
 
-using Xperience.Recombee.Recommendation.Content;
+using Kentico.Xperience.Recombee;
 
 [assembly: RegisterImplementation(typeof(IServiceConfigurationProvider), typeof(ServiceConfigurationProvider), Lifestyle = CMS.Core.Lifestyle.Singleton, Priority = CMS.Core.RegistrationPriority.Fallback)]
 
-namespace Xperience.Recombee.Recommendation.Content
+namespace Kentico.Xperience.Recombee
 {
     /// <summary>
     /// Provides configuration of the Recombee service.

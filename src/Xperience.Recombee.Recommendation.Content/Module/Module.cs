@@ -1,12 +1,12 @@
 ﻿using CMS;
 
-using Xperience.Recombee.Recommendation.Content;
+using Kentico.Xperience.Recombee;
 
 [assembly: AssemblyDiscoverable]
 
 [assembly: RegisterModule(typeof(Module))]
 
-namespace Xperience.Recombee.Recommendation.Content
+namespace Kentico.Xperience.Recombee
 {
     /// <summary>
     /// Represents the Recombee content recommendation module.

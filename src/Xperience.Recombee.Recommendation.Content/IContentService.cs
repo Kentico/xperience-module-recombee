@@ -5,11 +5,11 @@ using System.Text;
 using CMS;
 using CMS.DocumentEngine;
 
-using Xperience.Recombee.Recommendation.Content;
+using Kentico.Xperience.Recombee;
 
 [assembly: RegisterImplementation(typeof(IContentService), typeof(ContentService), Lifestyle = CMS.Core.Lifestyle.Singleton, Priority = CMS.Core.RegistrationPriority.Fallback)]
 
-namespace Xperience.Recombee.Recommendation.Content
+namespace Kentico.Xperience.Recombee
 {
     /// <summary>
     /// Manages content recommendation operations in the corresponding site's Recombee database.

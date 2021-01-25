@@ -5,7 +5,7 @@ using CMS.Core;
 
 using Recombee.ApiClient;
 
-namespace Xperience.Recombee.Recommendation.Content
+namespace Kentico.Xperience.Recombee
 {
     /// <summary>
     /// Provider of site-specific <see cref="IClientService"/>.

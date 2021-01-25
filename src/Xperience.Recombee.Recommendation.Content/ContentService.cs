@@ -6,7 +6,7 @@ using CMS.DocumentEngine;
 
 using Recombee.ApiClient.ApiRequests;
 
-namespace Xperience.Recombee.Recommendation.Content
+namespace Kentico.Xperience.Recombee
 {
     /// <summary>
     /// Manages content recommendation operations in the corresponding site's Recombee database.

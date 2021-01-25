@@ -4,7 +4,7 @@ VisualStudioVersion = 16.0.30406.217
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DancingGoatCore", "DancingGoatCore\DancingGoatCore.csproj", "{AEDC9E54-E322-4683-9FD3-118E411CBE18}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xperience.Recombee.Recommendation.Content", "Xperience.Recombee.Recommendation.Content\Xperience.Recombee.Recommendation.Content.csproj", "{46A1D4F5-680B-462C-8896-AA98214CE9EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kentico.Xperience.Recombee", "Xperience.Recombee.Recommendation.Content\Kentico.Xperience.Recombee.csproj", "{46A1D4F5-680B-462C-8896-AA98214CE9EC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

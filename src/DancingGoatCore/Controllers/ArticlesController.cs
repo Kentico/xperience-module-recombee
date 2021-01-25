@@ -15,7 +15,7 @@ using Kentico.PageBuilder.Web.Mvc.PageTemplates;
 
 using Microsoft.AspNetCore.Mvc;
 
-using Xperience.Recombee.Recommendation.Content;
+using Kentico.Xperience.Recombee;
 
 [assembly: RegisterPageRoute(ArticleSection.CLASS_NAME, typeof(ArticlesController))]
 [assembly: RegisterPageRoute(Article.CLASS_NAME, typeof(ArticlesController), ActionName = "Detail")]

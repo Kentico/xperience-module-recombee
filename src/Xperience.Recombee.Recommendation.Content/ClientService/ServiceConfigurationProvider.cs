@@ -3,7 +3,7 @@
 using CMS.Base;
 using CMS.Core;
 
-namespace Xperience.Recombee.Recommendation.Content
+namespace Kentico.Xperience.Recombee
 {
     /// <summary>
     /// Provides configuration of the Recombee service.

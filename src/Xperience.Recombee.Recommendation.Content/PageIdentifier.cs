@@ -2,7 +2,7 @@
 
 using CMS.DocumentEngine;
 
-namespace Xperience.Recombee.Recommendation.Content
+namespace Kentico.Xperience.Recombee
 {
     /// <summary>
     /// Identifier of a <see cref="TreeNode"/> used in the Recombee database.

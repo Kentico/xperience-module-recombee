@@ -4,7 +4,7 @@ using Recombee.ApiClient;
 using Recombee.ApiClient.ApiRequests;
 using Recombee.ApiClient.Bindings;
 
-namespace Xperience.Recombee.Recommendation.Content
+namespace Kentico.Xperience.Recombee
 {
     /// <summary>
     /// Encapsulates a <see cref="RecombeeClient"/> instance for a site.

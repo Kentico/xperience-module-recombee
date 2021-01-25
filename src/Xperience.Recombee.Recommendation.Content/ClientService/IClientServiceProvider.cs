@@ -1,10 +1,10 @@
 ﻿using CMS;
 
-using Xperience.Recombee.Recommendation.Content;
+using Kentico.Xperience.Recombee;
 
 [assembly: RegisterImplementation(typeof(IClientServiceProvider), typeof(ClientServiceProvider), Lifestyle = CMS.Core.Lifestyle.Singleton, Priority = CMS.Core.RegistrationPriority.Fallback)]
 
-namespace Xperience.Recombee.Recommendation.Content
+namespace Kentico.Xperience.Recombee
 {
     /// <summary>
     /// Provider of site-specific <see cref="IClientService"/>.
