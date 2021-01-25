@@ -22,6 +22,6 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.1" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Xperience.Recombee.Recommendation.Content\Kentico.Xperience.Recombee.csproj" />
+    <ProjectReference Include="..\Kentico.Xperience.Recombee\Kentico.Xperience.Recombee.csproj" />
   </ItemGroup>
 </Project>
