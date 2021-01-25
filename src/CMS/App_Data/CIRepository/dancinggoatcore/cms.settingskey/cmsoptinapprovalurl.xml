@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.settingskey>
+  <KeyCategoryID>
+    <CodeName>CMS.Newsletters.General</CodeName>
+    <ObjectType>cms.settingscategory</ObjectType>
+  </KeyCategoryID>
+  <KeyDefaultValue>~/Subscription/ConfirmSubscription</KeyDefaultValue>
+  <KeyDisplayName>{$settingskey.cmsoptinapprovalurl$}</KeyDisplayName>
+  <KeyGUID>22ac2a6c-5b96-45e4-ab55-cf3d32c4d7c7</KeyGUID>
+  <KeyIsHidden>False</KeyIsHidden>
+  <KeyName>CMSOptInApprovalURL</KeyName>
+  <KeyType>string</KeyType>
+  <KeyValue>~/Subscription/ConfirmSubscription</KeyValue>
+  <SiteID>
+    <CodeName>DancingGoatCore</CodeName>
+    <GUID>50ddc16b-9cd7-402f-af01-f3a3feae4ba2</GUID>
+    <ObjectType>cms.site</ObjectType>
+  </SiteID>
+</cms.settingskey>

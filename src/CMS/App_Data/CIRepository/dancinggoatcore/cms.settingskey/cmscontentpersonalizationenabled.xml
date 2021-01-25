@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.settingskey>
+  <KeyCategoryID>
+    <CodeName>CMS.OnlineMarketing.ContentPersonalization</CodeName>
+    <ObjectType>cms.settingscategory</ObjectType>
+  </KeyCategoryID>
+  <KeyDefaultValue>True</KeyDefaultValue>
+  <KeyDisplayName>{$settingskey.cmscontentpersonalizationenabled$}</KeyDisplayName>
+  <KeyGUID>18234abe-8288-4a09-b000-49a8726ddf02</KeyGUID>
+  <KeyIsHidden>False</KeyIsHidden>
+  <KeyName>CMSContentPersonalizationEnabled</KeyName>
+  <KeyType>boolean</KeyType>
+  <KeyValue>True</KeyValue>
+  <SiteID>
+    <CodeName>DancingGoatCore</CodeName>
+    <GUID>50ddc16b-9cd7-402f-af01-f3a3feae4ba2</GUID>
+    <ObjectType>cms.site</ObjectType>
+  </SiteID>
+</cms.settingskey>

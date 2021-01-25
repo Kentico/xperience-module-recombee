@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.settingskey>
+  <KeyCategoryID>
+    <CodeName>CMS.Ecommerce.AllowGlobalObjectsFor</CodeName>
+    <ObjectType>cms.settingscategory</ObjectType>
+  </KeyCategoryID>
+  <KeyDefaultValue>False</KeyDefaultValue>
+  <KeyDisplayName>{$settingskey.cmsstoreallowglobalproductoptions$}</KeyDisplayName>
+  <KeyGUID>c8be7da9-c0ea-4d9f-957e-bcf57c68e324</KeyGUID>
+  <KeyIsHidden>False</KeyIsHidden>
+  <KeyName>CMSStoreAllowGlobalProductOptions</KeyName>
+  <KeyType>boolean</KeyType>
+  <KeyValue>False</KeyValue>
+  <SiteID>
+    <CodeName>DancingGoatCore</CodeName>
+    <GUID>50ddc16b-9cd7-402f-af01-f3a3feae4ba2</GUID>
+    <ObjectType>cms.site</ObjectType>
+  </SiteID>
+</cms.settingskey>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.settingskey>
+  <KeyCategoryID>
+    <CodeName>CMS.URL.ContentTreeRouting</CodeName>
+    <ObjectType>cms.settingscategory</ObjectType>
+  </KeyCategoryID>
+  <KeyDefaultValue>/Home</KeyDefaultValue>
+  <KeyDisplayName>{$settingskey.cmshomepagepath$}</KeyDisplayName>
+  <KeyGUID>f21bb748-224a-40a7-9ab7-86c02a233700</KeyGUID>
+  <KeyIsHidden>False</KeyIsHidden>
+  <KeyName>CMSHomePagePath</KeyName>
+  <KeyType>string</KeyType>
+  <KeyValue>/Home</KeyValue>
+  <SiteID>
+    <CodeName>DancingGoatCore</CodeName>
+    <GUID>50ddc16b-9cd7-402f-af01-f3a3feae4ba2</GUID>
+    <ObjectType>cms.site</ObjectType>
+  </SiteID>
+</cms.settingskey>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.settingskey>
+  <KeyCategoryID>
+    <CodeName>CMS.Ecommerce.Emails</CodeName>
+    <ObjectType>cms.settingscategory</ObjectType>
+  </KeyCategoryID>
+  <KeyDefaultValue>True</KeyDefaultValue>
+  <KeyDisplayName>{$settingskey.cmsstoresendpaymentnotification$}</KeyDisplayName>
+  <KeyGUID>828c2ee2-e6b7-425a-b141-095e4199c2d3</KeyGUID>
+  <KeyIsHidden>False</KeyIsHidden>
+  <KeyName>CMSStoreSendPaymentNotification</KeyName>
+  <KeyType>boolean</KeyType>
+  <KeyValue>True</KeyValue>
+  <SiteID>
+    <CodeName>DancingGoatCore</CodeName>
+    <GUID>50ddc16b-9cd7-402f-af01-f3a3feae4ba2</GUID>
+    <ObjectType>cms.site</ObjectType>
+  </SiteID>
+</cms.settingskey>

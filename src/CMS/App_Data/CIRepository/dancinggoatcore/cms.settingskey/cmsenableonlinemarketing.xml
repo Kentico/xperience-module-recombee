@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.settingskey>
+  <KeyCategoryID>
+    <CodeName>CMS.OnlineMarketing.OnlineMarketing</CodeName>
+    <ObjectType>cms.settingscategory</ObjectType>
+  </KeyCategoryID>
+  <KeyDefaultValue>True</KeyDefaultValue>
+  <KeyDisplayName>{$settingskey.cmsenableonlinemarketing$}</KeyDisplayName>
+  <KeyGUID>105bb7c5-583c-4d32-bfb0-e398a59582cc</KeyGUID>
+  <KeyIsHidden>False</KeyIsHidden>
+  <KeyName>CMSEnableOnlineMarketing</KeyName>
+  <KeyType>boolean</KeyType>
+  <KeyValue>True</KeyValue>
+  <SiteID>
+    <CodeName>DancingGoatCore</CodeName>
+    <GUID>50ddc16b-9cd7-402f-af01-f3a3feae4ba2</GUID>
+    <ObjectType>cms.site</ObjectType>
+  </SiteID>
+</cms.settingskey>

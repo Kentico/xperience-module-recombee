@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.settingskey>
+  <KeyCategoryID>
+    <CodeName>CMS.WebSite.Metadata</CodeName>
+    <ObjectType>cms.settingscategory</ObjectType>
+  </KeyCategoryID>
+  <KeyDefaultValue>Dancing Goat</KeyDefaultValue>
+  <KeyDisplayName>{$settingskey.cmspagetitleprefix$}</KeyDisplayName>
+  <KeyGUID>4aed7bea-4898-4ff0-8c82-e07d29e35876</KeyGUID>
+  <KeyIsHidden>False</KeyIsHidden>
+  <KeyName>CMSPageTitlePrefix</KeyName>
+  <KeyType>string</KeyType>
+  <KeyValue>Dancing Goat</KeyValue>
+  <SiteID>
+    <CodeName>DancingGoatCore</CodeName>
+    <GUID>50ddc16b-9cd7-402f-af01-f3a3feae4ba2</GUID>
+    <ObjectType>cms.site</ObjectType>
+  </SiteID>
+</cms.settingskey>

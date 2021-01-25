@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.settingskey>
+  <KeyCategoryID>
+    <CodeName>CMS.URL.ContentTreeRouting</CodeName>
+    <ObjectType>cms.settingscategory</ObjectType>
+  </KeyCategoryID>
+  <KeyDefaultValue>True</KeyDefaultValue>
+  <KeyDisplayName>
+    <![CDATA[{$settingskey.cmshidelanguageprefixfordefaultcultureurl$}]]>
+  </KeyDisplayName>
+  <KeyGUID>920ba610-e35a-4127-88ed-7d9ead8be93c</KeyGUID>
+  <KeyIsHidden>False</KeyIsHidden>
+  <KeyName>CMSHideLanguagePrefixForDefaultCultureURL</KeyName>
+  <KeyType>boolean</KeyType>
+  <KeyValue>True</KeyValue>
+  <SiteID>
+    <CodeName>DancingGoatCore</CodeName>
+    <GUID>50ddc16b-9cd7-402f-af01-f3a3feae4ba2</GUID>
+    <ObjectType>cms.site</ObjectType>
+  </SiteID>
+</cms.settingskey>

@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.settingskey>
+  <KeyCategoryID>
+    <CodeName>CMS.Ecommerce.Accounts</CodeName>
+    <ObjectType>cms.settingscategory</ObjectType>
+  </KeyCategoryID>
+  <KeyDefaultValue>
+<![CDATA[
+<table border="1" cellpadding="5" cellspacing="0" width="600">
+  <tbody>
+    <tr>
+      <td colspan="2" height="50" style="padding: 8px" valign="bottom">
+        <table height="100%" width="100%">
+          <tbody>
+            <tr>
+              <td style="text-align: left; vertical-align: bottom;"><span style="font-size: 18pt">Invoice</span></td>
+              <td style="text-align: center; vertical-align: middle; padding: 8px"><span style="font-style: italic; font-family: Garamond, Times, serif; font-size: 24pt">Company logo</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align: left; padding: 8px">
+        <table style="width: 287px; height: 23px">
+          <tbody>
+            <tr>
+              <td style="text-align: left; color:black; font-weight:bold;">Invoice number</td>
+              <td style="text-align: right; padding-right: 10px; padding: 8px">{% Order.OrderInvoiceNumber|(encode)true |(identity)GlobalAdministrator|(hash)c7ef7f2f6ef739b3206a1d68dce047d9173e74365a9acc9d6eb808529fd9768a%}</td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+      <td style="text-align: left; padding: 8px">
+        <table width="100%">
+          <tbody>
+            <tr>
+              <td style="text-align: left; color:black; font-weight:bold;">Order date:</td>
+              <td style="text-align: right; padding: 8px">{% Order.OrderDate |(identity)GlobalAdministrator|(hash)1f7e381ecc8cf7ae597578748bdaced381a7cd3b24161c48cb5fafcaa77d8f28%}</td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 8px" width="50%"><span style="color:black; font-weight:bold">Supplier</span><br />
+        &nbsp;
+        <table>
+          <tbody>
+            <tr>
+              <td>Company address</td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+      <td style="text-align: left; vertical-align: top; padding: 8px" width="50%"><span style="color:black; font-weight:bold">Customer </span>
+        <p>
+            {% if(!IsNullOrEmpty(Customer.CustomerCompany)) { %} {% Localize(Customer.CustomerCompany)|(encode)true %} <br/> {% } |(identity)GlobalAdministrator|(hash)5883659e8723140ef464a895655c00a930c657296e460d9477ee46070671bd6d%}
+            {% if(!IsNullOrEmpty(Customer.CustomerTaxRegistrationID)) { %} {%  "Tax registration ID: " + Localize(Customer.CustomerTaxRegistrationID)|(encode)true %} <br/>{% }|(identity)GlobalAdministrator|(hash)76f7263745eb2b00166965cdf9b2e51b7e95531f147428fdf2236c9c186d5a6b%}
+            {% if(!IsNullOrEmpty(Customer.CustomerOrganizationID)) { %} {% "Organization ID: " + Localize(Customer.CustomerOrganizationID)|(encode)true %} <br/>{% } |(identity)GlobalAdministrator|(hash)b2472c93357c17ae79eb5805df9e8956a9df2e02cad0b26c3b776853591592bf%}
+            {% Localize(BillingAddress.AddressPersonalName)|(encode)true |(identity)GlobalAdministrator|(hash)9beca07d0e41ac058f729ab2c7e3156c30644692eda2bcf059a3c4fc15371474%}<br />
+            {% Localize(BillingAddress.AddressLine1)|(encode)true |(identity)GlobalAdministrator|(hash)e533d36db07936893e6af0fb1a5336bb291ac6a7ba007e9cbd9a11d0e1817977%}<br />
+            {% if(!IsNullOrEmpty(BillingAddress.AddressLine2)) { %} {%  Localize(BillingAddress.AddressLine2)|(encode)true %} <br/>{% } |(identity)GlobalAdministrator|(hash)477aaae09318b4b70b787b28f1f2a01e1446382f8ded2944c48479dac776be15%}
+            {% Localize(BillingAddress.AddressCity)|(encode)true |(identity)GlobalAdministrator|(hash)87126b7cf0786485aa1b423d32f27498ef24d2a09c5937bc47efd9489241a8c7%}<br />
+            {% Localize(BillingAddress.AddressZip)|(encode)true |(identity)GlobalAdministrator|(hash)1f51e5bed8ab4040bbd00d409ad4bd3818952918c75a752724c02fe856ee0e51%}<br />
+            {% Localize(BillingAddress.Country.CountryDisplayName)|(encode)true |(identity)GlobalAdministrator|(hash)171fbb6a516bd68747c9a24677d98aee9a28fe49739e4e762d0ba12b31548f4d%}{% if(BillingAddress.State != null) { ", " + Localize(BillingAddress.State.StateDisplayName) }|(encode)true |(identity)GlobalAdministrator|(hash)7a0e001e8d682842e738195227299fb8811e794b41aefff2cb9dcadfef02737a%}
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <table width="100%">
+          <tbody>
+            <tr>
+              <td style="text-align: left; padding: 8px"><span style="color:black; font-weight:bold">Payment option</span></td>
+              <td style="text-align: left; padding: 8px">{% PaymentOption.PaymentOptionDisplayName |(identity)GlobalAdministrator|(hash)7f507ef6437dc88af55ec8fd411c04968d1f39b693a2b64d8bd56109c0821230%}</td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="text-align: left; padding: 8px">
+        <table class="productsList" width="100%" cellspacing="0" cellpadding="2" style="text-align: right">
+          <thead>
+            <tr>
+              <th style="text-align: left; padding-top: 21px;">{$ InvoiceTemplate.SKUName $}</th>
+              <th style="text-align: right; padding: 21px 2px 2px 2px;">{$ InvoiceTemplate.SKUUnits $}</th>
+              <th style="text-align: right; padding-top: 21px;">{$ InvoiceTemplate.SKUPrice $}</th>
+              <th style="text-align: right; padding-top: 21px;">{$ InvoiceTemplate.Subtotal $}</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% foreach(item in ContentTable) { %}
+              <tr>
+                <td style="text-align: left;">{%(item.IsProductOption) ? "&nbsp;&nbsp;&nbsp;" : ""%}{% Localize(item.SKUName)|(encode)true %}
+                {% (item.CartItemText != "") ? " '" + item.CartItemText + "' " : "" |(encode)true %}
+                {% item.SKUNumber|(encode)true %}</td>
+                <td style="text-align: right; vertical-align: top;">{%(item.IsProductOption && !item.IsAccessoryProduct) ? "" : item.Units %}</td>
+                <td style="text-align: right; vertical-align: top;">{%(item.IsProductOption && !item.IsAccessoryProduct) ? "" : (item.UnitPrice - item.UnitTotalDiscount).Format(Currency.CurrencyFormatString)|(encode)true #%}</td>
+                <td style="text-align: right; vertical-align: top;">{%(item.IsProductOption && !item.IsAccessoryProduct) ? "" : item.TotalPrice.Format(Currency.CurrencyFormatString)|(encode)true #%}</td>
+              </tr>
+            {% } |(identity)GlobalAdministrator|(hash)3854cb8eb6b6117edeb844f39903dfcd676ec6aec60fb8e7c886340efe021705%}
+          </tbody>
+        </table>
+        <hr size="1" />
+        <table cellpadding="5" style="float: right;" width="60%">
+          <tbody>
+            <tr>
+              <td>Subtotal</td>
+              <td style="text-align: right; padding-right: 0px">{% TotalItemsPrice.Format(Currency.CurrencyFormatString)|(encode)true |(identity)GlobalAdministrator|(hash)12805d7824eeb04260d890d3d9f5ab11a3b8bec03d6bcfa8b55dcac05bc6be21%}</td>
+            </tr>
+            <tr>
+              <td colspan="2" style="padding: 0; text-align: right;">
+                {% if(OrderDiscountSummary.Any()) { %}
+                <table width="100%" cellspacing="0" cellpadding="0" style="text-align: right; width: 100%;">
+                  <tbody>
+                    {% foreach(discountItem in OrderDiscountSummary) { %}
+                    <tr>
+                      <td style="padding: 0px 8px 0px 5px; text-align: left;">{% Localize(discountItem.Name)|(encode)true %}</td>
+                      <td style="vertical-align: top; text-align: right;">&#8209;&nbsp;{% discountItem.Value.Format(Currency.CurrencyFormatString)|(encode)true #%}</td>
+                    </tr>
+                    {% } %}
+                  </tbody>
+                </table>
+                {% } |(identity)GlobalAdministrator|(hash)186ef44161e460d732528ad958da29dc5586f428874a8354318d1a8d6e8c6918%}
+              </td>
+            </tr>
+            <tr>
+              <td>Shipping</td>
+              <td style="text-align: right; padding-right: 0px">{% TotalShipping.Format(Currency.CurrencyFormatString)|(encode)true |(identity)GlobalAdministrator|(hash)6b816953714142ae1fa2e7115d238322a105f3131098f66f449aa278e5ac0351%}</td>
+            </tr>
+            <tr>
+              <td colspan="2" style="padding: 0; text-align: right;">
+                {% if(OtherPaymentsSummary.Any()) { %}
+                <table width="100%" cellspacing="0" cellpadding="0" style="text-align: right; width: 100%;">
+                  <tbody>
+                    {% foreach(discountItem in OtherPaymentsSummary) { %}
+                    <tr>
+                      <td style="padding: 0px 8px 0px 5px; text-align: left;">{% Localize(discountItem.Name)|(encode)true %}</td>
+                      <td style="vertical-align: top; text-align: right;">&#8209;&nbsp;{% discountItem.Value.Format(Currency.CurrencyFormatString)|(encode)true #%}</td>
+                    </tr>
+                    {% } %}
+                  </tbody>
+                </table>
+                {% } |(identity)GlobalAdministrator|(hash)29443eb07906f9a95ec8a6a6a2da6987bf550d43b9c3c31df627f1b3fc1ef449%}
+              </td>
+            </tr>
+            <tr>
+              <td><span style="color:black; font-weight:bold">TOTAL (incl. tax):</span></td>
+              <td style="text-align: right; padding-right: 0px; color:black; font-weight:bold">{% GrandTotal.Format(Currency.CurrencyFormatString)|(encode)true |(identity)GlobalAdministrator|(hash)789bb8e2be3cb9cc556ecd30c013e69f72a12d33306047c4c5bb518ef03871cd%}</td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <table width="50%">
+          <tbody>
+            <tr>
+              <td style="text-align: left; padding: 8px"><span style="color:black; font-weight:bold">Tax summary</span></td>
+            </tr>
+            <tr>
+              <td style="text-align: left;">
+                {% if(TaxSummary.Any()) { %}
+                <table width="100%" cellspacing="0" cellpadding="0" style="text-align: right; width: 100%;">
+                  <tbody>
+                    {% foreach(taxItem in TaxSummary) { %}
+                    <tr>
+                      <td style="padding: 0px 8px 0px 5px; text-align: left;">{% Localize(taxItem.Name)|(encode)true %}</td>
+                      <td style="vertical-align: top; text-align: right;">{% taxItem.Value.Format(Currency.CurrencyFormatString)|(encode)true #%}</td>
+                    </tr>
+                    {% } %}
+                  </tbody>
+                </table>
+                {% } |(identity)GlobalAdministrator|(hash)f0c691976d82fe862e1c199b40f36825fb52d99944f45cb420ceb844d075bf8b%}
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+]]>
+  </KeyDefaultValue>
+  <KeyDisplayName>{$settingskey.cmsstoreinvoicetemplate$}</KeyDisplayName>
+  <KeyGUID>997510c3-7ea8-47e1-9c07-d83fda24a2d8</KeyGUID>
+  <KeyIsHidden>True</KeyIsHidden>
+  <KeyName>CMSStoreInvoiceTemplate</KeyName>
+  <KeyType>string</KeyType>
+  <KeyValue>
+<![CDATA[
+<table border="1" cellpadding="5" cellspacing="0" width="600">
+  <tbody>
+    <tr>
+      <td colspan="2" height="50" style="padding: 8px" valign="bottom">
+        <table height="100%" width="100%">
+          <tbody>
+            <tr>
+              <td style="text-align: left; vertical-align: bottom;"><span style="font-size: 18pt">Invoice</span></td>
+              <td style="text-align: center; vertical-align: middle; padding: 8px"><span style="font-style: italic; font-family: Garamond, Times, serif; font-size: 24pt">Company logo</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align: left; padding: 8px">
+        <table style="width: 287px; height: 23px">
+          <tbody>
+            <tr>
+              <td style="text-align: left; color:black; font-weight:bold;">Invoice number</td>
+              <td style="text-align: right; padding-right: 10px; padding: 8px">{% Order.OrderInvoiceNumber|(encode)true |(identity)GlobalAdministrator|(hash)c7ef7f2f6ef739b3206a1d68dce047d9173e74365a9acc9d6eb808529fd9768a%}</td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+      <td style="text-align: left; padding: 8px">
+        <table width="100%">
+          <tbody>
+            <tr>
+              <td style="text-align: left; color:black; font-weight:bold;">Order date:</td>
+              <td style="text-align: right; padding: 8px">{% Order.OrderDate |(identity)GlobalAdministrator|(hash)1f7e381ecc8cf7ae597578748bdaced381a7cd3b24161c48cb5fafcaa77d8f28%}</td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top; padding: 8px" width="50%"><span style="color:black; font-weight:bold">Supplier</span><br />
+        &nbsp;
+        <table>
+          <tbody>
+            <tr>
+              <td>Company address</td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+      <td style="text-align: left; vertical-align: top; padding: 8px" width="50%"><span style="color:black; font-weight:bold">Customer </span>
+        <p>
+            {% if(!IsNullOrEmpty(Customer.CustomerCompany)) { %} {% Localize(Customer.CustomerCompany)|(encode)true %} <br/> {% } |(identity)GlobalAdministrator|(hash)5883659e8723140ef464a895655c00a930c657296e460d9477ee46070671bd6d%}
+            {% if(!IsNullOrEmpty(Customer.CustomerTaxRegistrationID)) { %} {%  "Tax registration ID: " + Localize(Customer.CustomerTaxRegistrationID)|(encode)true %} <br/>{% }|(identity)GlobalAdministrator|(hash)76f7263745eb2b00166965cdf9b2e51b7e95531f147428fdf2236c9c186d5a6b%}
+            {% if(!IsNullOrEmpty(Customer.CustomerOrganizationID)) { %} {% "Organization ID: " + Localize(Customer.CustomerOrganizationID)|(encode)true %} <br/>{% } |(identity)GlobalAdministrator|(hash)b2472c93357c17ae79eb5805df9e8956a9df2e02cad0b26c3b776853591592bf%}
+            {% Localize(BillingAddress.AddressPersonalName)|(encode)true |(identity)GlobalAdministrator|(hash)9beca07d0e41ac058f729ab2c7e3156c30644692eda2bcf059a3c4fc15371474%}<br />
+            {% Localize(BillingAddress.AddressLine1)|(encode)true |(identity)GlobalAdministrator|(hash)e533d36db07936893e6af0fb1a5336bb291ac6a7ba007e9cbd9a11d0e1817977%}<br />
+            {% if(!IsNullOrEmpty(BillingAddress.AddressLine2)) { %} {%  Localize(BillingAddress.AddressLine2)|(encode)true %} <br/>{% } |(identity)GlobalAdministrator|(hash)477aaae09318b4b70b787b28f1f2a01e1446382f8ded2944c48479dac776be15%}
+            {% Localize(BillingAddress.AddressCity)|(encode)true |(identity)GlobalAdministrator|(hash)87126b7cf0786485aa1b423d32f27498ef24d2a09c5937bc47efd9489241a8c7%}<br />
+            {% Localize(BillingAddress.AddressZip)|(encode)true |(identity)GlobalAdministrator|(hash)1f51e5bed8ab4040bbd00d409ad4bd3818952918c75a752724c02fe856ee0e51%}<br />
+            {% Localize(BillingAddress.Country.CountryDisplayName)|(encode)true |(identity)GlobalAdministrator|(hash)171fbb6a516bd68747c9a24677d98aee9a28fe49739e4e762d0ba12b31548f4d%}{% if(BillingAddress.State != null) { ", " + Localize(BillingAddress.State.StateDisplayName) }|(encode)true |(identity)GlobalAdministrator|(hash)7a0e001e8d682842e738195227299fb8811e794b41aefff2cb9dcadfef02737a%}
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <table width="100%">
+          <tbody>
+            <tr>
+              <td style="text-align: left; padding: 8px"><span style="color:black; font-weight:bold">Payment option</span></td>
+              <td style="text-align: left; padding: 8px">{% PaymentOption.PaymentOptionDisplayName |(identity)GlobalAdministrator|(hash)7f507ef6437dc88af55ec8fd411c04968d1f39b693a2b64d8bd56109c0821230%}</td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="text-align: left; padding: 8px">
+        <table class="productsList" width="100%" cellspacing="0" cellpadding="2" style="text-align: right">
+          <thead>
+            <tr>
+              <th style="text-align: left; padding-top: 21px;">{$ InvoiceTemplate.SKUName $}</th>
+              <th style="text-align: right; padding: 21px 2px 2px 2px;">{$ InvoiceTemplate.SKUUnits $}</th>
+              <th style="text-align: right; padding-top: 21px;">{$ InvoiceTemplate.SKUPrice $}</th>
+              <th style="text-align: right; padding-top: 21px;">{$ InvoiceTemplate.Subtotal $}</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% foreach(item in ContentTable) { %}
+              <tr>
+                <td style="text-align: left;">{%(item.IsProductOption) ? "&nbsp;&nbsp;&nbsp;" : ""%}{% Localize(item.SKUName)|(encode)true %}
+                {% (item.CartItemText != "") ? " '" + item.CartItemText + "' " : "" |(encode)true %}
+                {% item.SKUNumber|(encode)true %}</td>
+                <td style="text-align: right; vertical-align: top;">{%(item.IsProductOption && !item.IsAccessoryProduct) ? "" : item.Units %}</td>
+                <td style="text-align: right; vertical-align: top;">{%(item.IsProductOption && !item.IsAccessoryProduct) ? "" : (item.UnitPrice - item.UnitTotalDiscount).Format(Currency.CurrencyFormatString)|(encode)true #%}</td>
+                <td style="text-align: right; vertical-align: top;">{%(item.IsProductOption && !item.IsAccessoryProduct) ? "" : item.TotalPrice.Format(Currency.CurrencyFormatString)|(encode)true #%}</td>
+              </tr>
+            {% } |(identity)GlobalAdministrator|(hash)3854cb8eb6b6117edeb844f39903dfcd676ec6aec60fb8e7c886340efe021705%}
+          </tbody>
+        </table>
+        <hr size="1" />
+        <table cellpadding="5" style="float: right;" width="60%">
+          <tbody>
+            <tr>
+              <td>Subtotal</td>
+              <td style="text-align: right; padding-right: 0px">{% TotalItemsPrice.Format(Currency.CurrencyFormatString)|(encode)true |(identity)GlobalAdministrator|(hash)12805d7824eeb04260d890d3d9f5ab11a3b8bec03d6bcfa8b55dcac05bc6be21%}</td>
+            </tr>
+            <tr>
+              <td colspan="2" style="padding: 0; text-align: right;">
+                {% if(OrderDiscountSummary.Any()) { %}
+                <table width="100%" cellspacing="0" cellpadding="0" style="text-align: right; width: 100%;">
+                  <tbody>
+                    {% foreach(discountItem in OrderDiscountSummary) { %}
+                    <tr>
+                      <td style="padding: 0px 8px 0px 5px; text-align: left;">{% Localize(discountItem.Name)|(encode)true %}</td>
+                      <td style="vertical-align: top; text-align: right;">&#8209;&nbsp;{% discountItem.Value.Format(Currency.CurrencyFormatString)|(encode)true #%}</td>
+                    </tr>
+                    {% } %}
+                  </tbody>
+                </table>
+                {% } |(identity)GlobalAdministrator|(hash)186ef44161e460d732528ad958da29dc5586f428874a8354318d1a8d6e8c6918%}
+              </td>
+            </tr>
+            <tr>
+              <td>Shipping</td>
+              <td style="text-align: right; padding-right: 0px">{% TotalShipping.Format(Currency.CurrencyFormatString)|(encode)true |(identity)GlobalAdministrator|(hash)6b816953714142ae1fa2e7115d238322a105f3131098f66f449aa278e5ac0351%}</td>
+            </tr>
+            <tr>
+              <td colspan="2" style="padding: 0; text-align: right;">
+                {% if(OtherPaymentsSummary.Any()) { %}
+                <table width="100%" cellspacing="0" cellpadding="0" style="text-align: right; width: 100%;">
+                  <tbody>
+                    {% foreach(discountItem in OtherPaymentsSummary) { %}
+                    <tr>
+                      <td style="padding: 0px 8px 0px 5px; text-align: left;">{% Localize(discountItem.Name)|(encode)true %}</td>
+                      <td style="vertical-align: top; text-align: right;">&#8209;&nbsp;{% discountItem.Value.Format(Currency.CurrencyFormatString)|(encode)true #%}</td>
+                    </tr>
+                    {% } %}
+                  </tbody>
+                </table>
+                {% } |(identity)GlobalAdministrator|(hash)29443eb07906f9a95ec8a6a6a2da6987bf550d43b9c3c31df627f1b3fc1ef449%}
+              </td>
+            </tr>
+            <tr>
+              <td><span style="color:black; font-weight:bold">TOTAL (incl. tax):</span></td>
+              <td style="text-align: right; padding-right: 0px; color:black; font-weight:bold">{% GrandTotal.Format(Currency.CurrencyFormatString)|(encode)true |(identity)GlobalAdministrator|(hash)789bb8e2be3cb9cc556ecd30c013e69f72a12d33306047c4c5bb518ef03871cd%}</td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <table width="50%">
+          <tbody>
+            <tr>
+              <td style="text-align: left; padding: 8px"><span style="color:black; font-weight:bold">Tax summary</span></td>
+            </tr>
+            <tr>
+              <td style="text-align: left;">
+                {% if(TaxSummary.Any()) { %}
+                <table width="100%" cellspacing="0" cellpadding="0" style="text-align: right; width: 100%;">
+                  <tbody>
+                    {% foreach(taxItem in TaxSummary) { %}
+                    <tr>
+                      <td style="padding: 0px 8px 0px 5px; text-align: left;">{% Localize(taxItem.Name)|(encode)true %}</td>
+                      <td style="vertical-align: top; text-align: right;">{% taxItem.Value.Format(Currency.CurrencyFormatString)|(encode)true #%}</td>
+                    </tr>
+                    {% } %}
+                  </tbody>
+                </table>
+                {% } |(identity)GlobalAdministrator|(hash)f0c691976d82fe862e1c199b40f36825fb52d99944f45cb420ceb844d075bf8b%}
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+]]>
+  </KeyValue>
+  <SiteID>
+    <CodeName>DancingGoatCore</CodeName>
+    <GUID>50ddc16b-9cd7-402f-af01-f3a3feae4ba2</GUID>
+    <ObjectType>cms.site</ObjectType>
+  </SiteID>
+</cms.settingskey>
