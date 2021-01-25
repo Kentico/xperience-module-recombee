@@ -340,3 +340,17 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
+
+#Exclude SmartSearch files
+*.fdt
+*.fdx
+*.fnm
+*.nrm
+*.prx
+*.frq
+*.tii
+*.tis
+*.del
+*.cfs
+segments_2i
+
