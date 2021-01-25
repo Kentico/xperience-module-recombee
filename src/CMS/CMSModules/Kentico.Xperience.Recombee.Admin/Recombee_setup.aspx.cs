@@ -8,7 +8,7 @@ using CMS.UIControls;
 
 using Kentico.Xperience.Recombee.Admin;
 
-[UIElement("Xperience.Recombee.Content.Recommendation.Admin", "Xperience.Recombee.Content.Recommendation")]
+[UIElement("Kentico.Xperience.Recombee.Admin", "Kentico.Xperience.Recombee.Admin")]
 public partial class CMSModules_Recombee_setup : CMSPage
 {
     private readonly ISettingsService settingsService;

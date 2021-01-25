@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <cms.resourcesite>
   <Parent>
-    <CodeName>Xperience.Recombee.Content.Recommendation.Admin</CodeName>
+    <CodeName>Kentico.Xperience.Recombee.Admin</CodeName>
     <GUID>2d0c22a6-f2d7-4950-a161-c9a9cdbb0aae</GUID>
     <ObjectType>cms.resource</ObjectType>
   </Parent>

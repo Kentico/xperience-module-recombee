@@ -9,7 +9,7 @@
   <ElementIsCustom>True</ElementIsCustom>
   <ElementIsGlobalApplication>False</ElementIsGlobalApplication>
   <ElementIsMenu>False</ElementIsMenu>
-  <ElementName>Xperience.Recombee.Content.Recommendation</ElementName>
+  <ElementName>Kentico.Xperience.Recombee</ElementName>
   <ElementOrder>39</ElementOrder>
   <ElementParentID>
     <CodeName>Configuration</CodeName>
@@ -28,7 +28,7 @@
   </ElementProperties>
   <ElementRequiresGlobalAdminPriviligeLevel>False</ElementRequiresGlobalAdminPriviligeLevel>
   <ElementResourceID>
-    <CodeName>Xperience.Recombee.Content.Recommendation.Admin</CodeName>
+    <CodeName>Kentico.Xperience.Recombee.Admin</CodeName>
     <GUID>2d0c22a6-f2d7-4950-a161-c9a9cdbb0aae</GUID>
     <ObjectType>cms.resource</ObjectType>
   </ElementResourceID>
