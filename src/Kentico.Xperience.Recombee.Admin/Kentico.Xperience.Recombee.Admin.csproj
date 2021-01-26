@@ -4,6 +4,7 @@
     <TargetFramework>net48</TargetFramework>
     <Authors>Kentico Software</Authors>
     <Version>0.0.1-preview</Version>
+    <Company>Kentico Software</Company>
   </PropertyGroup>
 
   <ItemGroup>
