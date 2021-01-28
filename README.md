@@ -1,4 +1,11 @@
-# xperience-module-recombee-recommendations
+# The Kentico Xperience Recombee module
+[![Stack Overflow](https://img.shields.io/badge/Stack%20Overflow-ASK%20NOW-FE7A16.svg?logo=stackoverflow&logoColor=white)](https://stackoverflow.com/tags/kentico)
+
+|  | Package |
+| ------------- |:-------------:|
+| Admin | [![NuGet](https://img.shields.io/nuget/v/Kentico.Xperience.Recombee.Admin.KX13.svg)](https://www.nuget.org/packages/Kentico.Xperience.Recombee.Admin.KX13/0.0.1-preview) |
+| MVC client | [![NuGet](https://img.shields.io/nuget/v/Kentico.Xperience.Recombee.KX13.svg)](https://www.nuget.org/packages/Kentico.Xperience.Recombee.KX13/0.0.1-preview) |
+
 [Recombee Recommender](https://www.recombee.com/) for [Kentico Xperience](https://xperience.io/)
 
 This repository contains source code for integration of Kentico Xperience with Recombee Artificial Intelligence Powered Recommender as a Service.
@@ -17,7 +24,7 @@ This project consists of two modules:
 1. You need to have an account on Recombee.com
    - you can create your own free account on Recombee.com or have your project registered in the Kentico organization.
 
-> This module is used for demonstrating [AI product recommendation possibilities](https://xperience.io/discover/blog/2019-10/artificial-intelligence-ai-is-here-to-help-you-w). Further adjustments are needed for production usage to fit particular use cases.
+> This module is used for demonstrating [AI recommendation possibilities](https://xperience.io/discover/blog/2019-10/artificial-intelligence-ai-is-here-to-help-you-w). Further adjustments are needed for production usage to fit particular use cases.
 
 ## Setting up the environment
 ### Administration package installation
