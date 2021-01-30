@@ -38,7 +38,6 @@ This project consists of two modules:
     ```
     > Replace *DancingGoatCore* with the code name of your site.
 1. Build the project.
-1. Go to the *Settings* application and navigate to *Integration* -> *Recombee*. Fill in the *Recombee database identifier* and *Secret token* fields.
 
 ### Live site package installation
 1. Open the solution with your MVC Core project (e.g. *~/DancingGoatCore.sln*).
