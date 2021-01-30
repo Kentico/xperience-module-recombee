@@ -77,7 +77,7 @@ configurations.Mappings.Add("cms.document.DancingGoatCore.Article", new List<Fie
       new FieldMapping(article => article.GetValue("ArticleText"), "Text")
 });
 ```
-> This can be also done in custom module. See example in [Xperience.Recombee.Recommendation.Content.Admin.SampleConfiguration](Xperience.Recombee.Recommendation.Content.Admin.SampleConfiguration) folder.
+> This can be also done in custom module. See example in [Kentico.Xperience.Recombee.Admin.SampleConfiguration](src/Kentico.Xperience.Recombee.Admin.SampleConfiguration) folder.
 
 ### Recombee database initialization
 
