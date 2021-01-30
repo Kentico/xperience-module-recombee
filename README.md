@@ -44,9 +44,9 @@ This project consists of two modules:
 1. Open the solution with your MVC Core project (e.g. *~/DancingGoatCore.sln*).
 1. Navigate to the *NuGet Package Manager Console*.
 1. Run *Install-Package Kentico.Xperience.Recombee.KX13 -Version 0.0.1-preview*.
-1. Add the following keys into the *packages.config* file of the live site project:
+1. Add the following keys into the *appsettings.json* file of the live site project:
    ```JSON
-   "DancingGoatCore.Recombee.ContentRecommendation.DatabaseId" : "##YourDatabaseID##"
+   "DancingGoatCore.Recombee.ContentRecommendation.DatabaseId" : "##YourDatabaseID##",
    "DancingGoatCore.Recombee.ContentRecommendation.PrivateToken" : "##YourPrivateToken##"
    ```
    > Replace *DancingGoatCore* with the code name of your site.
