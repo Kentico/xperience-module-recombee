@@ -33,7 +33,7 @@ This project consists of two modules:
 1. Run *Install-Package Kentico.Xperience.Recombee.Admin.KX13 -Version 0.0.1-preview*
 1. Add the following keys into the *web.config* file of the administration project:
     ```XML
-    <add key="DancingGoatCore.Recombee.ContentRecommendation.DatabaseId" value="##YourDatabaseID##" />
+    <add key="DancingGoatCore.Recombee.ContentRecommendation.DatabaseId" value="##YourAPIIdentifier##" />
     <add key="DancingGoatCore.Recombee.ContentRecommendation.PrivateToken" value="##YourPrivateToken##" />
     ```
     > Replace *DancingGoatCore* with the code name of your site.
@@ -45,7 +45,7 @@ This project consists of two modules:
 1. Run *Install-Package Kentico.Xperience.Recombee.KX13 -Version 0.0.1-preview*.
 1. Add the following keys into the *appsettings.json* file of the live site project:
    ```JSON
-   "DancingGoatCore.Recombee.ContentRecommendation.DatabaseId" : "##YourDatabaseID##",
+   "DancingGoatCore.Recombee.ContentRecommendation.DatabaseId" : "##YourAPIIdentifier##",
    "DancingGoatCore.Recombee.ContentRecommendation.PrivateToken" : "##YourPrivateToken##"
    ```
    > Replace *DancingGoatCore* with the code name of your site.
