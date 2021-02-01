@@ -106,4 +106,8 @@ You can retrieve a list of pages that are chosen based on the content of the cur
 IContentService.GetPagesRecommendationForPage(TreeNode page, Guid contactGuid, int count, string culture, IEnumerable<string> pageTypes = null);
 ```
 
+## [Questions & Support](https://github.com/Kentico/Home/blob/master/README.md)
+
+See the [Kentico home repository](https://github.com/Kentico/Home/blob/master/README.md) for more information about the product(s), general advice on submitting your questions or directly contacting us.
+
 ![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/xperience-module-recombee-recommendations?pixel)
