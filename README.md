@@ -37,6 +37,7 @@ This project consists of two modules:
     <add key="DancingGoatCore.Recombee.ContentRecommendation.PrivateToken" value="##YourPrivateToken##" />
     ```
     > Replace *DancingGoatCore* with the code name of your site.
+
 1. Build the project.
 
 ### Live site package installation
@@ -45,7 +46,7 @@ This project consists of two modules:
 1. Run *Install-Package Kentico.Xperience.Recombee.KX13 -Version 0.0.1-preview*.
 1. Add the following keys into the *appsettings.json* file of the live site project:
    ```JSON
-   "DancingGoatCore.Recombee.ContentRecommendation.DatabaseId" : "##YourAPIIdentifier##",
+   "DancingGoatCore.Recombee.ContentRecommendation.DatabaseId" : "##YourAPIIdentifier##"
    "DancingGoatCore.Recombee.ContentRecommendation.PrivateToken" : "##YourPrivateToken##"
    ```
    > Replace *DancingGoatCore* with the code name of your site.
@@ -92,21 +93,46 @@ To work with the data from Recombee on the live site, you can use one of two app
 * Recommend pages to visitors based on the content of the page they are currently viewing.
 
 ### Recommending pages based on contact activity
-Firstly, you need to log page views of your contacts:
+Firstly, you need to log views of page types for which you have set up field mapping:
 ```c#
-IContentService.LogPageView(TreeNode page, Guid contactGuid);
+private readonly IContentService contentService;
+
+public ExampleController(IContentService contentService)
+{
+  this.contentService = contentService;
+}
+
+public void ExampleMethod()
+{
+  ...
+
+  contentService.LogPageView(TreeNode page, Guid contactGuid);
+}
 ```
 Afterwards, you can get a list of recommended pages based on the contact's previous page views:
 ```c#
-IContentService.GetPagesRecommendationForContact(string siteName, Guid contactGuid, int count, string culture, IEnumerable<string> pageTypes = null);
+contentService.GetPagesRecommendationForContact(string siteName, Guid contactGuid, int count, string culture, IEnumerable<string> pageTypes = null);
 ```
 ### Recommending pages based on the current page
 You can retrieve a list of pages that are chosen based on the content of the current page:
 ```c#
-IContentService.GetPagesRecommendationForPage(TreeNode page, Guid contactGuid, int count, string culture, IEnumerable<string> pageTypes = null);
+private readonly IContentService contentService;
+
+public ExampleController(IContentService contentService)
+{
+  this.contentService = contentService;
+}
+
+public void ExampleMethod()
+{
+  ...
+
+  contentService.GetPagesRecommendationForPage(TreeNode page, Guid contactGuid, int count, string culture, IEnumerable<string> pageTypes = null);
+}
 ```
 
-## [Questions & Support](https://github.com/Kentico/Home/blob/master/README.md)
+
+## Questions & Support
 
 See the [Kentico home repository](https://github.com/Kentico/Home/blob/master/README.md) for more information about the product(s), general advice on submitting your questions or directly contacting us.
 
