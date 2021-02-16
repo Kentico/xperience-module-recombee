@@ -149,6 +149,9 @@ public void ExampleMethod()
 }
 ```
 
+## Get involved
+
+Check out the [contributing](CONTRIBUTING.md) page to see how to file issues, start discussions, and begin contributing.
 
 ## Questions & Support
 
