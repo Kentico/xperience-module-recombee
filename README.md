@@ -157,4 +157,3 @@ Check out the [contributing](CONTRIBUTING.md) page to see how to file issues, st
 
 See the [Kentico home repository](https://github.com/Kentico/Home/blob/master/README.md) for more information about the product(s) and general advice on submitting questions.
 
-![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/xperience-module-recombee-recommendations?pixel)
