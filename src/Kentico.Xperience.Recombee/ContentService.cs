@@ -38,16 +38,17 @@ namespace Kentico.Xperience.Recombee
         /// <param name="count">Number of items to return.</param>
         /// <param name="culture">Culture to be considered for recommendation.</param>
         /// <param name="pageTypes">Constrain on page types to be considered for recommendation, or null.</param>
+        /// <param name="scenario">Scenario defines a particular application of recommendations. It can be for example "homepage", "related" or "emailing". You can configure each scenario in the Recombee Admin UI.</param>
         /// <returns>Returns an enumeration of identifiers of recommended pages.</returns>
         /// <exception cref="InvalidOperationException">Thrown when the Recombee client service is not configured for <paramref name="siteName"/>.</exception>
-        public IEnumerable<PageIdentifier> GetPagesRecommendationForContact(string siteName, Guid contactGuid, int count, string culture, IEnumerable<string> pageTypes = null)
+        public IEnumerable<PageIdentifier> GetPagesRecommendationForContact(string siteName, Guid contactGuid, int count, string culture, IEnumerable<string> pageTypes = null, string scenario = null)
         {
             var client = GetClientServiceOrThrow(siteName);
             var pageTypeFilter = (pageTypes != null) ? GetPageTypeFilter(pageTypes) : null;
             var cultureFilter = (culture != null) ? GetCultureFilter(culture) : null;
             var filter = ConcatFilterExpressions(pageTypeFilter, cultureFilter);
 
-            var recommendation = client.Execute(rc => rc.Send(new RecommendItemsToUser(contactGuid.ToString(), count, filter: filter, cascadeCreate: true)));
+            var recommendation = client.Execute(rc => rc.Send(new RecommendItemsToUser(contactGuid.ToString(), count, filter: filter, cascadeCreate: true, scenario: scenario)));
 
             return recommendation.Recomms.Select(r => ParseItemId(r.Id));
         }
@@ -61,16 +62,17 @@ namespace Kentico.Xperience.Recombee
         /// <param name="count">Number of items to return.</param>
         /// <param name="cultures">Culture to be considered for recommendation.</param>
         /// <param name="pageTypes">Constrain on page types to be considered for recommendation, or null.</param>
+        /// <param name="scenario">Scenario defines a particular application of recommendations. It can be for example "homepage", "related" or "emailing". You can configure each scenario in the Recombee Admin UI.</param>
         /// <returns>Returns an enumeration of identifiers of recommended pages.</returns>
         /// <exception cref="InvalidOperationException">Thrown when the Recombee client service is not configured for <paramref name="siteName"/>.</exception>
-        public IEnumerable<PageIdentifier> GetPagesRecommendationForPage(TreeNode page, Guid contactGuid, int count, string culture, IEnumerable<string> pageTypes = null)
+        public IEnumerable<PageIdentifier> GetPagesRecommendationForPage(TreeNode page, Guid contactGuid, int count, string culture, IEnumerable<string> pageTypes = null, string scenario = null)
         {
             var client = GetClientServiceOrThrow(page.NodeSiteName);
             var pageTypeFilter = (pageTypes != null) ? GetPageTypeFilter(pageTypes) : null;
             var cultureFilter = (culture != null) ? GetCultureFilter(culture) : null;
             var filter = ConcatFilterExpressions(pageTypeFilter, cultureFilter);
 
-            var recommendation = client.Execute(rc => rc.Send(new RecommendItemsToItem(GetItemId(page), contactGuid.ToString(), count, filter: filter, cascadeCreate: true)));
+            var recommendation = client.Execute(rc => rc.Send(new RecommendItemsToItem(GetItemId(page), contactGuid.ToString(), count, filter: filter, cascadeCreate: true, scenario: scenario)));
 
             return recommendation.Recomms.Select(r => ParseItemId(r.Id));
         }
