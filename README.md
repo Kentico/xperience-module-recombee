@@ -125,7 +125,7 @@ Afterwards, you can get a list of recommended pages based on the contact's previ
 ```c#
 // Gets a collection of 'PageIdentifier' objects, 
 // containing the identifiers of Xperience pages recommended for the specified contact
-contentService.GetPagesRecommendationForContact(string siteName, Guid contactGuid, int count, string culture, IEnumerable<string> pageTypes = null);
+contentService.GetPagesRecommendationForContact(string siteName, Guid contactGuid, int count, string culture, IEnumerable<string> pageTypes = null, string scenario = null);
 ```
 Use the data to display a list of recommendation on your website.
 
@@ -145,7 +145,7 @@ public void ExampleMethod()
 
     // Gets a collection of 'PageIdentifier' objects, 
     // containing the identifiers of Xperience pages recommended for the specified page and contact
-    contentService.GetPagesRecommendationForPage(TreeNode page, Guid contactGuid, int count, string culture, IEnumerable<string> pageTypes = null);
+    contentService.GetPagesRecommendationForPage(TreeNode page, Guid contactGuid, int count, string culture, IEnumerable<string> pageTypes = null, string scenario = null);
 }
 ```
 
