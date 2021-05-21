@@ -3,8 +3,8 @@
 
 |  | Package |
 | ------------- |:-------------:|
-| Administration | [![NuGet](https://img.shields.io/nuget/v/Kentico.Xperience.Recombee.Admin.KX13.svg)](https://www.nuget.org/packages/Kentico.Xperience.Recombee.Admin.KX13/0.0.1-preview) |
-| Live site | [![NuGet](https://img.shields.io/nuget/v/Kentico.Xperience.Recombee.KX13.svg)](https://www.nuget.org/packages/Kentico.Xperience.Recombee.KX13/0.0.1-preview) |
+| Administration | [![NuGet](https://img.shields.io/nuget/v/Kentico.Xperience.Recombee.Admin.KX13.svg)](https://www.nuget.org/packages/Kentico.Xperience.Recombee.Admin.KX13/0.1.0) |
+| Live site | [![NuGet](https://img.shields.io/nuget/v/Kentico.Xperience.Recombee.KX13.svg)](https://www.nuget.org/packages/Kentico.Xperience.Recombee.KX13/0.1.0) |
 
 [Recombee Recommender](https://www.recombee.com/) for [Kentico Xperience](https://xperience.io/)
 
