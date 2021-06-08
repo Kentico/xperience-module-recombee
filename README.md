@@ -30,7 +30,7 @@ This project consists of two modules:
 ### Administration package installation
 1. Open the solution with your administration project (*~/WebApp.sln*).
 1. Navigate to the *NuGet Package Manager Console*.
-1. Run *Install-Package Kentico.Xperience.Recombee.Admin.KX13 -Version 0.0.1-preview*
+1. Run *Install-Package Kentico.Xperience.Recombee.Admin.KX13 -Version 0.1.0*
 1. Edit the administration project's *web.config* file and add the following keys into the *appSettings* section:
     ```XML
     <add key="DancingGoatCore.Recombee.ContentRecommendation.DatabaseId" value="##YourAPIIdentifier##" />
@@ -43,7 +43,7 @@ This project consists of two modules:
 ### Live site package installation
 1. Open the solution with your live site project (e.g., *~/DancingGoatCore.sln*).
 1. Navigate to the *NuGet Package Manager Console*.
-1. Run *Install-Package Kentico.Xperience.Recombee.KX13 -Version 0.0.1-preview*.
+1. Run *Install-Package Kentico.Xperience.Recombee.KX13 -Version 0.1.0*
 1. Add the following keys into the configuration file of the live site project (e.g., *appsettings.json* for ASP.NET Core projects):
    ```JSON
    "DancingGoatCore.Recombee.ContentRecommendation.DatabaseId" : "##YourAPIIdentifier##"
