@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Kentico.Xperience.Libraries" Version="13.0.0" />
+    <PackageReference Include="Kentico.Xperience.Libraries" Version="13.0.137" />
     <PackageReference Include="Recombee.ApiClient" Version="2.4.1" />
   </ItemGroup>
 
